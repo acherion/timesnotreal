@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>There Is No Such Thing as Time — A Recursive Model of Emergent Time, Gravity &amp; the Dark Sector</title>
+  <meta name="description" content="A recursive cosmological model where time is emergent, gravity is inherited electromagnetism, and the dark sector arises from fractal frame nesting. Derives Newton's G from the golden ratio and the fine structure constant with 0.8% accuracy.">
+  <meta name="keywords" content="emergent time, recursive cosmology, golden ratio physics, dark matter explanation, dark energy explanation, gravitational constant derivation, coherence-pulse field, fractal universe, KAM stability, time is not real, alternative gravity">
+  <meta name="author" content="Lee Timmons">
+  <link rel="canonical" href="https://www.timesnotreal.com/">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    "headline": "There Is No Such Thing as Time — A Recursive Model of Emergent Time, Gravity & the Dark Sector",
+    "description": "A recursive cosmological model deriving dark energy, dark matter, ordinary matter fractions and Newton's gravitational constant from the golden ratio and the fine structure constant.",
+    "author": { "@type": "Person", "name": "Lee Timmons" },
+    "keywords": "emergent time, recursive cosmology, golden ratio, dark matter, dark energy, gravitational constant, KAM stability, fractal universe",
+    "about": [
+      { "@type": "Thing", "name": "General Relativity" },
+      { "@type": "Thing", "name": "Quantum Mechanics" },
+      { "@type": "Thing", "name": "Dark Matter" },
+      { "@type": "Thing", "name": "Dark Energy" },
+      { "@type": "Thing", "name": "Golden Ratio" },
+      { "@type": "Thing", "name": "Gravitational Constant" }
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --text: #1a1a2e;
+      --bg: #ffffff;
+      --accent: #2c3e6b;
+      --accent-light: #3d5a99;
+      --border: #d0d0d0;
+      --subtle: #f5f6fa;
+      --highlight: #fef9e7;
+      --link: #1a5276;
+      --pass: #27ae60;
+      --warn: #e67e22;
+      --fail: #c0392b;
+      --muted: #7f8c8d;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.75;
+      max-width: 880px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem 4rem;
+      font-size: 16.5px;
+    }
+    h1 {
+      font-size: 2.1rem;
+      line-height: 1.2;
+      color: var(--accent);
+      margin: 0 0 0.5rem;
+      border-bottom: 3px solid var(--accent);
+      padding-bottom: 0.5rem;
+    }
+    .tagline {
+      font-size: 1.15rem;
+      color: var(--accent-light);
+      font-style: italic;
+      margin: 0 0 2rem;
+    }
+    h2 {
+      font-size: 1.5rem;
+      color: var(--accent);
+      margin: 2.5rem 0 0.75rem;
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 0.3rem;
+    }
+    h3 {
+      font-size: 1.2rem;
+      color: var(--accent);
+      margin: 2rem 0 0.5rem;
+    }
+    p { margin: 0 0 1rem; }
+    a { color: var(--link); }
+    .lead {
+      font-size: 1.1rem;
+      line-height: 1.8;
+    }
+    .callout {
+      background: var(--highlight);
+      border-left: 4px solid var(--warn);
+      padding: 1rem 1.25rem;
+      margin: 1.5rem 0;
+      border-radius: 0 6px 6px 0;
+    }
+    .result-box {
+      background: var(--subtle);
+      border-left: 4px solid var(--accent);
+      padding: 1.25rem 1.5rem;
+      margin: 1.5rem 0;
+      border-radius: 0 6px 6px 0;
+    }
+    .result-box p:last-child { margin-bottom: 0; }
+    .formula {
+      text-align: center;
+      font-size: 1.15rem;
+      padding: 0.75rem 0;
+      margin: 1rem 0;
+      font-weight: 600;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0 1.5rem;
+      font-size: 0.92rem;
+    }
+    th, td {
+      border: 1px solid var(--border);
+      padding: 0.55rem 0.7rem;
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      background: var(--accent);
+      color: #fff;
+      font-weight: 600;
+    }
+    tr:nth-child(even) { background: var(--subtle); }
+    .pass { color: var(--pass); font-weight: 700; }
+    .warn { color: var(--warn); font-weight: 600; }
+    .future { color: var(--muted); font-style: italic; }
+    ul, ol { margin: 0 0 1rem; padding-left: 1.75rem; }
+    li { margin-bottom: 0.4rem; }
+    .faq dt { font-weight: 700; margin: 1.25rem 0 0.25rem; }
+    .faq dd { margin: 0 0 1rem 0; }
+    .section-label {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      font-size: 0.75rem;
+      padding: 0.15rem 0.5rem;
+      border-radius: 3px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.5rem;
+    }
+    .open-tag {
+      display: inline-block;
+      background: var(--warn);
+      color: #fff;
+      font-size: 0.7rem;
+      padding: 0.1rem 0.4rem;
+      border-radius: 3px;
+      font-weight: 700;
+      vertical-align: middle;
+    }
+    hr { border: none; border-top: 1px solid var(--border); margin: 2.5rem 0; }
+    @media (max-width: 600px) {
+      body { padding: 1rem; font-size: 15px; }
+      h1 { font-size: 1.6rem; }
+      table { font-size: 0.82rem; }
+      th, td { padding: 0.4rem; }
+    }
+  </style>
+</head>
+<body>
+
+<article itemscope itemtype="https://schema.org/ScholarlyArticle">
+
+<header>
+  <h1 itemprop="headline">There Is No Such Thing as Time</h1>
+  <p class="tagline" itemprop="description">A recursive model of emergent time, gravity &amp; the dark sector &mdash; deriving G from &phi; and &alpha;.</p>
+</header>
+
+<!-- ============================================================ -->
+<h2>Part I &mdash; The Idea</h2>
+<!-- ============================================================ -->
+
+<section>
+  <h3>Time is not real</h3>
+  <p class="lead">Time doesn&rsquo;t actually exist. It is a useful modelling tool, but it does not lead to correct understanding of the universal model. In truth, there is only &ldquo;now&rdquo; &mdash; impacted by the past via momentum and impacting the future via momentum. What we observe as time passing is actually a series of discrete points along a continuous line, similar to creating animation by flipping through still images.</p>
+
+  <p>Picture the universe running on a ridiculously fast beat. On each tiny beat, things are allowed to change a little &mdash; atoms twitch, signals move, decisions get made. That&rsquo;s all &ldquo;time&rdquo; is: how many successful updates you&rsquo;ve racked up. If the beat gives you lots of room each tick, life feels fast; if it gives you less room, everything runs slow.</p>
+
+  <p>The reason we experience a continuous perception is that the gaps between beats are imperceptible to us. The primary blocker to unified theory is the assumption that human perception of events is universal, when instead it is truncated to a small &mdash; likely infinitesimally small &mdash; frame of reference.</p>
+</section>
+
+<section>
+  <h3>Speed, redefined</h3>
+  <p>Once time is removed, speed changes its meaning. It is tempting to assume speed is the rate at which one jumps from one image to the next, but that is incorrect. The images move at a single speed &mdash; what we call the speed of light. What your &ldquo;speed&rdquo; actually means is <strong>how often you get to act</strong> within the passage of these still images.</p>
+  <p>Think of it like the tick of a clock: how many ticks have to occur before I get to act again? Speed can be viewed as a percentage of light (&ldquo;I act 4% as often as light does&rdquo;) or as a multiple of <a href="https://en.wikipedia.org/wiki/Planck_length">Planck lengths</a> (&ldquo;light has to travel N Planck lengths before I can act&rdquo;).</p>
+</section>
+
+<section>
+  <h3>Time dilation &mdash; the mechanical explanation</h3>
+  <p>A clock moving at near light speed ticks slower for a simple, mechanical reason: the particles inside the clock that pulse the crystal have much less <em>relative</em> speed to actually move through the circuitry, because the clock and everything inside it is already moving so fast.</p>
+
+  <p>This isn&rsquo;t just an analogy &mdash; it&rsquo;s mathematically exact. If a particle inside the clock has a maximum speed of c (the speed limit), and the clock itself moves at speed v, then the velocity budget is:</p>
+
+  <p class="formula">v<sub>internal</sub>&sup2; + v<sub>bulk</sub>&sup2; &le; c&sup2;</p>
+
+  <p>So the maximum internal speed is:</p>
+
+  <p class="formula">v<sub>internal</sub> &le; c &radic;(1 &minus; v&sup2;/c&sup2;) = c / &gamma;</p>
+
+  <p>The clock ticks at rate 1/&gamma; &mdash; <strong>exactly the special relativistic time dilation factor</strong>. No mystery, no geometry &mdash; just fewer clean chances to change when you&rsquo;re nearly keeping up with your own internal signals.</p>
+
+  <p>The same idea explains gravitational time dilation. Near a massive object, the effective local speed limit is reduced (by the influence of the parent frame &mdash; more on this below), so internal clock processes run proportionally slower.</p>
+</section>
+
+<section>
+  <h3>Quantum mechanics as under-sampling</h3>
+  <p>Once you get rid of time, the probabilistic nature of quantum mechanics becomes easy to explain: things are happening between the flips of the pages. From our point of view, this leads to the randomness observed at small scale.</p>
+  <p>We exist within a certain common reference frame based on our relatively common size &mdash; quantum scale vs ours vs astronomic &mdash; which is one of many frames that exist simultaneously. We can&rsquo;t observe full information of a size frame smaller than us because we simply don&rsquo;t move often enough to observe the changes.</p>
+  <p>Just as we can&rsquo;t perceive changes within too short a duration (quantum weirdness), we have the same problem going up. Stuff that we are used to being in motion are, for something much larger, effectively still. This is what is going on with gravity.</p>
+</section>
+
+<section>
+  <h3>Gravity is inherited electromagnetism</h3>
+  <p><strong>Gravity is just the electromagnetic forces of the next frame of reference up.</strong> Just like a molecule of sugar is part of a sugar crystal, our physical universe is part of a greater physical entity. The structural binding forces of that larger entity &mdash; which are electromagnetic at its scale &mdash; project into our frame as what we experience as gravity.</p>
+  <p>This is dark matter creating gravity for us. Interestingly, a trait present in the greater entity for a brief moment (to it) could define our universe for its entire duration.</p>
+</section>
+
+<section>
+  <h3>The fractal universe</h3>
+  <p>The universe is a fractal &mdash; recursive, self-similar at every scale, sprawling until it runs out of energy. We can tell how far we are in the overall frames of recursive reference by looking at dark matter and dark energy vs our energy:</p>
+  <ul>
+    <li><strong>Dark matter</strong> = the accumulated structural influence from all the frames that came before us</li>
+    <li><strong>Dark energy</strong> = the remaining fuel left in the recursion</li>
+    <li><strong>Ordinary matter</strong> = our frame&rsquo;s own expressed energy</li>
+  </ul>
+  <p>Once we run out of dark energy, all the fingers of the fractal wind back in as the universe implodes under gravity, collapsing back to a single point &mdash; and doing everything once again.</p>
+</section>
+
+<hr>
+
+<!-- ============================================================ -->
+<h2>Part II &mdash; The Mathematics</h2>
+<!-- ============================================================ -->
+
+<section>
+  <h3>The geometric recursion model</h3>
+  <p>If each recursive frame &ldquo;expresses&rdquo; a fraction <strong>p</strong> of the remaining energy as matter at that level, and passes <strong>(1&minus;p)</strong> onward as fuel for deeper recursion, then after <strong>n</strong> levels:</p>
+
+  <table>
+    <thead><tr><th>Component</th><th>Formula</th><th>Meaning</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Dark energy</strong></td><td>(1&minus;p)<sup>n</sup></td><td>Remaining fuel after all levels</td></tr>
+      <tr><td><strong>Dark matter</strong></td><td>1 &minus; (1&minus;p)<sup>n&minus;1</sup></td><td>Total expressed by all frames above us</td></tr>
+      <tr><td><strong>Ordinary matter</strong></td><td>p &times; (1&minus;p)<sup>n&minus;1</sup></td><td>Expressed at our frame</td></tr>
+    </tbody>
+  </table>
+
+  <p>Solving from the observed values (Planck 2018: &Omega;<sub>&Lambda;</sub>&thinsp;=&thinsp;0.689, &Omega;<sub>c</sub>&thinsp;=&thinsp;0.261, &Omega;<sub>b</sub>&thinsp;=&thinsp;0.049):</p>
+
+  <p class="formula">p &asymp; 0.068 &emsp;&emsp; n &asymp; 5.28</p>
+
+  <p>Two parameters, fixed by two constraints. The third observable (ordinary matter) is a <em>prediction</em>: the model gives 0.050, vs observed 0.049 &mdash; within 3%.</p>
+</section>
+
+<section>
+  <h3>The golden ratio appears</h3>
+  <p>Both parameters are expressible as clean functions of the golden ratio &phi;&thinsp;=&thinsp;(1+&radic;5)/2&thinsp;&asymp;&thinsp;1.618:</p>
+
+  <p class="formula">p = 2/&phi;<sup>7</sup> &asymp; 0.0689 &emsp;&emsp; n = 2&phi;&sup2; &asymp; 5.236</p>
+
+  <div class="result-box">
+    <p><strong>Predictions using only &phi;:</strong></p>
+    <table>
+      <thead><tr><th>Component</th><th>&phi;-model</th><th>Planck 2018</th><th>Status</th></tr></thead>
+      <tbody>
+        <tr><td>Dark energy</td><td>68.8%</td><td>68.9 &plusmn; 0.6%</td><td class="pass">&check; within error bar</td></tr>
+        <tr><td>Dark matter</td><td>26.1%</td><td>26.1 &plusmn; 0.2%</td><td class="pass">&check; within error bar</td></tr>
+        <tr><td>Ordinary matter</td><td>5.1%</td><td>4.9 &plusmn; 0.03%</td><td class="warn">~4% high</td></tr>
+      </tbody>
+    </table>
+    <p>Dark energy and dark matter match within the Planck satellite&rsquo;s measurement uncertainty. The ordinary matter prediction is 4% high &mdash; close but not exact. This is an acknowledged limitation of the model.</p>
+  </div>
+</section>
+
+<section>
+  <h3>Why the golden ratio? &mdash; KAM stability</h3>
+  <p>The golden ratio isn&rsquo;t arbitrary. There is a deep result in Hamiltonian dynamics called the <strong>KAM theorem</strong> (Kolmogorov&ndash;Arnold&ndash;Moser) which says: in a perturbed dynamical system, the structures that survive the longest are those whose frequency ratios are the <em>hardest to approximate by rational numbers</em>.</p>
+
+  <p>The golden ratio is the <strong>most irrational number</strong> &mdash; its continued fraction representation is [1;&thinsp;1,&thinsp;1,&thinsp;1,&thinsp;&hellip;], all 1s, making rational convergence the slowest possible. A recursive universe built on &phi;-ratio coupling would be <strong>maximally stable</strong> against perturbation.</p>
+
+  <p>Among all possible recursive universes, &phi;-based ones survive the longest. This is cosmological natural selection: the golden ratio isn&rsquo;t a coincidence &mdash; it&rsquo;s the only recursion ratio that produces a structure stable enough to be observed.</p>
+
+  <p>This is what I mean by &ldquo;perfect recursion&rdquo; &mdash; all dimensions of the universe remain constant relative to each other as you move up and down levels. In KAM terms, the recursive stack has no near-resonances between levels, so energy doesn&rsquo;t accumulate destructively at any scale. The structure persists.</p>
+</section>
+
+<section>
+  <h3>A formula for Newton&rsquo;s gravitational constant</h3>
+  <p>If gravity is EM attenuated across recursive frame boundaries, the total attenuation equals the EM-to-gravity force ratio. Each boundary attenuates EM by a factor related to the electromagnetic coupling constant &alpha; and the golden ratio. Across n&thinsp;=&thinsp;2&phi;&sup2; boundaries:</p>
+
+  <div class="result-box">
+    <p class="formula" style="font-size:1.25rem;">G = (k<sub>e</sub> e&sup2; / m<sub>p</sub>&sup2;) &times; &alpha;(m<sub>p</sub>)<sup>4&phi;&sup3;</sup></p>
+    <p>where:</p>
+    <ul>
+      <li>k<sub>e</sub>&thinsp;=&thinsp;Coulomb&rsquo;s constant, e&thinsp;=&thinsp;electron charge, m<sub>p</sub>&thinsp;=&thinsp;proton mass</li>
+      <li>&alpha;(m<sub>p</sub>)&thinsp;&asymp;&thinsp;1/135 is the electromagnetic coupling constant evaluated at the proton mass energy scale (~1&thinsp;GeV), via standard QED running</li>
+      <li>4&phi;&sup3;&thinsp;=&thinsp;4(2&phi;+1)&thinsp;&asymp;&thinsp;16.944 &mdash; the product of the per-boundary attenuation exponent (2&phi;) and the number of boundaries (2&phi;&sup2;)</li>
+    </ul>
+    <p><strong>Result: G<sub>predicted</sub>&thinsp;=&thinsp;6.62&thinsp;&times;&thinsp;10<sup>&minus;11</sup></strong> vs measured <strong>6.674&thinsp;&times;&thinsp;10<sup>&minus;11</sup></strong> m&sup3;&thinsp;kg<sup>&minus;1</sup>&thinsp;s<sup>&minus;2</sup>. <strong>Accuracy: 0.8%, with zero free parameters.</strong></p>
+  </div>
+
+  <p>The per-boundary attenuation &alpha;(m<sub>p</sub>)<sup>2&phi;</sup> uses the <em>running</em> fine structure constant at the proton mass scale. This isn&rsquo;t tuned &mdash; &alpha; runs from 1/137 at zero energy to ~1/135 at 1&thinsp;GeV as a standard result of QED. The proton mass is the natural energy scale because protons constitute the bulk of ordinary matter.</p>
+
+  <p>The total EM-to-gravity force ratio for protons:</p>
+  <p class="formula">F<sub>EM</sub>&thinsp;/&thinsp;F<sub>grav</sub> = &alpha;(m<sub>p</sub>)<sup>&minus;4&phi;&sup3;</sup> &asymp; 10<sup>36.1</sup></p>
+  <p>Observed: 10<sup>36.09</sup>. Match to <strong>0.08% in the exponent</strong>.</p>
+</section>
+
+<section>
+  <h3>How the formula works</h3>
+  <p>The exponent 4&phi;&sup3; decomposes cleanly:</p>
+  <table>
+    <thead><tr><th>Factor</th><th>Expression</th><th>Value</th><th>Meaning</th></tr></thead>
+    <tbody>
+      <tr><td>Per-boundary exponent</td><td>2&phi;</td><td>3.236</td><td>How many effective powers of &alpha; each frame boundary costs</td></tr>
+      <tr><td>Number of boundaries</td><td>2&phi;&sup2;</td><td>5.236</td><td>How deep in the recursion our frame sits</td></tr>
+      <tr><td>Total exponent</td><td>2&phi;&thinsp;&times;&thinsp;2&phi;&sup2;&thinsp;=&thinsp;4&phi;&sup3;</td><td>16.944</td><td>Combined attenuation from EM to gravity</td></tr>
+    </tbody>
+  </table>
+  <p>Everything derives from two inputs: the golden ratio &phi; and the electromagnetic coupling &alpha;. The factor of 2 appears in both the per-boundary exponent and the recursion depth &mdash; its origin (possibly related to spatial degrees of freedom or EM polarizations) is an open question.</p>
+</section>
+
+<hr>
+
+<!-- ============================================================ -->
+<h2>Part III &mdash; Validation &amp; Predictions</h2>
+<!-- ============================================================ -->
+
+<section>
+  <h3>What the model explains</h3>
+  <table>
+    <thead><tr><th>Observation</th><th>Model explanation</th><th>Status</th></tr></thead>
+    <tbody>
+      <tr><td>Special-relativistic time dilation</td><td>Velocity budget: internal particles have less relative speed &rarr; clock rate = 1/&gamma;</td><td class="pass">&check; exact</td></tr>
+      <tr><td>Gravitational time dilation</td><td>Parent frame&rsquo;s EM reduces local speed limit &rarr; clocks run proportionally slower</td><td class="pass">&check; matches GR at 1PN</td></tr>
+      <tr><td>Dark energy fraction (68.9%)</td><td>Remaining fuel: (1&minus;p)<sup>n</sup> with p&thinsp;=&thinsp;2/&phi;<sup>7</sup>, n&thinsp;=&thinsp;2&phi;&sup2;</td><td class="pass">&check; within error bar</td></tr>
+      <tr><td>Dark matter fraction (26.1%)</td><td>Accumulated structure: 1&minus;(1&minus;p)<sup>n&minus;1</sup></td><td class="pass">&check; within error bar</td></tr>
+      <tr><td>Ordinary matter fraction (4.9%)</td><td>Our level: p(1&minus;p)<sup>n&minus;1</sup></td><td class="warn">5.1% predicted (4% high)</td></tr>
+      <tr><td>EM/gravity ratio (~10<sup>36</sup>)</td><td>&alpha;(m<sub>p</sub>)<sup>&minus;4&phi;&sup3;</sup></td><td class="pass">&check; 0.08% in exponent</td></tr>
+      <tr><td>Newton&rsquo;s G = 6.674&times;10<sup>&minus;11</sup></td><td>(k<sub>e</sub>e&sup2;/m<sub>p</sub>&sup2;)&thinsp;&times;&thinsp;&alpha;<sup>4&phi;&sup3;</sup></td><td class="pass">&check; 0.8% accuracy</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <h3>Falsifiable predictions</h3>
+
+  <p>The model makes specific claims that can be tested:</p>
+
+  <ol>
+    <li><strong>Dark energy is not a cosmological constant.</strong> In this model, dark energy is &ldquo;remaining fuel&rdquo; that diminishes as the recursion progresses. This requires the dark energy equation of state w&thinsp;&gt;&thinsp;&minus;1 (dark energy weakens over time). If w&thinsp;=&thinsp;&minus;1 exactly, this model is wrong.<br>
+    <em>Current evidence:</em> The <a href="https://www.desi.lbl.gov/">DESI collaboration (2024)</a> found &gt;2&sigma; evidence for evolving dark energy (w&thinsp;&ne;&thinsp;&minus;1), with dark energy appearing to weaken &mdash; consistent with this prediction. Euclid and LSST will provide decisive tests.</li>
+
+    <li><strong>The ordinary matter fraction should be ~5.1%, not 4.9%.</strong> The model predicts &Omega;<sub>b</sub>&thinsp;&asymp;&thinsp;0.051. The current Planck measurement is 0.049&thinsp;&plusmn;&thinsp;0.0003. If future measurements (or a different cosmological model for data extraction) shift &Omega;<sub>b</sub> upward, the model is supported. If 0.049 is confirmed with higher precision, the model needs a correction term.</li>
+
+    <li><strong>Gravitational constant G is derivable.</strong> The formula G&thinsp;=&thinsp;(k<sub>e</sub>e&sup2;/m<sub>p</sub>&sup2;)&thinsp;&times;&thinsp;&alpha;(m<sub>p</sub>)<sup>4&phi;&sup3;</sup> can be checked against increasingly precise measurements of G, &alpha;, and m<sub>p</sub>. Any improvement in the measured G should remain consistent with this formula to within ~1%.</li>
+
+    <li><strong>Gravity should exhibit EM-like properties at extreme precision.</strong> If gravity is inherited EM from a parent frame, gravitational effects should have subtle electromagnetic signatures &mdash; potentially detectable in precision gravitational-wave or torsion-balance experiments at scales beyond current sensitivity.</li>
+  </ol>
+</section>
+
+<hr>
+
+<!-- ============================================================ -->
+<h2>Part IV &mdash; Open Questions &amp; Honesty</h2>
+<!-- ============================================================ -->
+
+<section>
+  <h3>What this model gets right</h3>
+  <ul>
+    <li>A single conceptual framework (recursive frames + emergent time) explains time dilation, the dark sector composition, and the EM/gravity hierarchy</li>
+    <li>The formula for G has 0.8% accuracy with zero free parameters</li>
+    <li>The dark energy and dark matter fractions match Planck data within error bars</li>
+    <li>The KAM theorem provides rigorous mathematical motivation for why &phi; appears</li>
+    <li>The running of &alpha; to ~1/135 at the proton mass scale is standard QED, not tuned</li>
+    <li>DESI&rsquo;s 2024 evidence for evolving dark energy is consistent with the &ldquo;fuel runs out&rdquo; prediction</li>
+  </ul>
+</section>
+
+<section>
+  <h3>What remains open</h3>
+  <ul>
+    <li><strong>The 4% ordinary matter discrepancy.</strong> The model predicts 5.1% vs observed 4.9%. This is small but real. It may reflect epoch-dependence (the fundamental partition differs from the current cosmological snapshot) or a missing correction term. Six approaches to resolving it were explored without success.</li>
+
+    <li><strong>The factor of 2.</strong> Both p&thinsp;=&thinsp;<strong>2</strong>/&phi;<sup>7</sup> and n&thinsp;=&thinsp;<strong>2</strong>&phi;&sup2; contain the factor 2. It may represent spatial degrees of freedom, EM polarizations, or a bilateral symmetry. Its origin is not yet derived from first principles.</li>
+
+    <li><strong>Frame-dragging.</strong> Lense&ndash;Thirring precession is a vector (gravitomagnetic) effect. A simple scalar model cannot produce it. However, if gravity is inherited EM from a parent frame with full vector structure, frame-dragging could emerge naturally from the angular momentum of that parent structure. This needs detailed calculation.</li>
+
+    <li><strong>Gravitational radiation.</strong> Binary pulsar decay matches GR to 0.2%. If gravity arises from a parent frame&rsquo;s EM, the radiation mechanism is different from GR&rsquo;s tensor quadrupole radiation. The model needs to show it reproduces the correct energy loss rate. This is non-trivial but not necessarily fatal &mdash; the parent frame&rsquo;s EM is richer than a scalar field.</li>
+
+    <li><strong>Full cosmological model.</strong> The recursion gives energy fractions but not the full expansion history, CMB power spectrum, or structure formation. Developing these is a major undertaking.</li>
+
+    <li><strong>Entanglement.</strong> The &ldquo;shared timing&rdquo; explanation of entanglement is a form of superdeterminism. It is logically consistent but does not yet make predictions distinguishable from standard quantum mechanics.</li>
+
+    <li><strong>Particle masses.</strong> Known mass ratios (proton/electron, W/proton, Planck/proton) do not show clean &phi;-power patterns. The golden ratio appears to govern inter-frame recursion, not intra-frame particle physics &mdash; which is consistent with each frame having its own Standard Model physics.</li>
+  </ul>
+</section>
+
+<hr>
+
+<!-- ============================================================ -->
+<h2>FAQ</h2>
+<!-- ============================================================ -->
+
+<section>
+  <dl class="faq">
+    <dt>Isn&rsquo;t the golden ratio stuff just numerology?</dt>
+    <dd>Maybe &mdash; if the only evidence were the numerical matches. But three things elevate it beyond pattern-matching: (1) the KAM theorem provides a rigorous reason why &phi; specifically would govern a stable recursive structure; (2) the formula for G uses the <em>running</em> &alpha; at the proton mass scale, which comes from standard QED, not from tuning; and (3) the DE and DM predictions fall within Planck error bars. That said, deriving p&thinsp;=&thinsp;2/&phi;<sup>7</sup> and n&thinsp;=&thinsp;2&phi;&sup2; from first principles &mdash; rather than fitting them &mdash; is the critical next step.</dd>
+
+    <dt>How is this different from other &ldquo;time isn&rsquo;t real&rdquo; ideas?</dt>
+    <dd>Most proposals that time is emergent are philosophical or limited to quantum gravity contexts. This model makes quantitative predictions: specific values for the dark sector composition and a formula for G. It can be falsified by precision cosmology (DESI, Euclid, LSST) and by increasingly accurate measurements of fundamental constants.</dd>
+
+    <dt>If gravity is EM from a parent frame, why is it 10<sup>36</sup> times weaker?</dt>
+    <dd>Because it crosses ~5.2 recursive frame boundaries, each of which attenuates EM by a factor of &alpha;<sup>2&phi;</sup>&thinsp;&asymp;&thinsp;10<sup>&minus;6.9</sup>. After 2&phi;&sup2; boundaries, the total attenuation is &alpha;<sup>4&phi;&sup3;</sup>&thinsp;&asymp;&thinsp;10<sup>&minus;36</sup>. This is derived, not assumed.</dd>
+
+    <dt>Does the model violate known physics?</dt>
+    <dd>At the observational level, no &mdash; it reproduces time dilation, the dark sector, and G. At the theoretical level, a discrete universal &ldquo;beat&rdquo; implies a preferred frame, which would violate Lorentz invariance. However, if the beat frequency is at or near the Planck scale (~10<sup>44</sup>&thinsp;Hz), violations would be far below current detection thresholds.</dd>
+
+    <dt>What would kill this model?</dt>
+    <dd>Three things: (1) DESI/Euclid/LSST confirming w&thinsp;=&thinsp;&minus;1 exactly (dark energy is a cosmological constant, not fuel); (2) a measurement of G that diverges from the formula beyond ~1%; (3) detection of Lorentz invariance violation at a scale inconsistent with the model&rsquo;s predictions.</dd>
+  </dl>
+</section>
+
+<hr>
+
+<!-- ============================================================ -->
+<h2>Appendix &mdash; Key Formulas</h2>
+<!-- ============================================================ -->
+
+<section>
+  <h3>Fundamental inputs</h3>
+  <table>
+    <thead><tr><th>Symbol</th><th>Value</th><th>Meaning</th></tr></thead>
+    <tbody>
+      <tr><td>&phi;</td><td>(1+&radic;5)/2 &asymp; 1.61803</td><td>Golden ratio</td></tr>
+      <tr><td>&alpha;(m<sub>p</sub>)</td><td>&asymp; 1/135</td><td>EM coupling at proton mass scale (from QED running)</td></tr>
+      <tr><td>k<sub>e</sub></td><td>8.988&thinsp;&times;&thinsp;10<sup>9</sup> N&thinsp;m&sup2;&thinsp;C<sup>&minus;2</sup></td><td>Coulomb&rsquo;s constant</td></tr>
+      <tr><td>e</td><td>1.602&thinsp;&times;&thinsp;10<sup>&minus;19</sup> C</td><td>Electron charge</td></tr>
+      <tr><td>m<sub>p</sub></td><td>1.673&thinsp;&times;&thinsp;10<sup>&minus;27</sup> kg</td><td>Proton mass</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Derived recursion parameters</h3>
+  <table>
+    <thead><tr><th>Parameter</th><th>Expression</th><th>Value</th></tr></thead>
+    <tbody>
+      <tr><td>Energy fraction per level</td><td>p = 2/&phi;<sup>7</sup></td><td>0.0689</td></tr>
+      <tr><td>Recursion depth</td><td>n = 2&phi;&sup2;</td><td>5.236</td></tr>
+      <tr><td>Attenuation per boundary</td><td>a = &alpha;(m<sub>p</sub>)<sup>2&phi;</sup></td><td>1.28&thinsp;&times;&thinsp;10<sup>&minus;7</sup></td></tr>
+      <tr><td>Total attenuation exponent</td><td>4&phi;&sup3; = 2&phi;&thinsp;&times;&thinsp;2&phi;&sup2;</td><td>16.944</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Observable predictions</h3>
+  <table>
+    <thead><tr><th>Observable</th><th>Formula</th><th>Predicted</th><th>Observed</th></tr></thead>
+    <tbody>
+      <tr><td>Dark energy</td><td>(1&minus;p)<sup>n</sup></td><td>0.688</td><td>0.689</td></tr>
+      <tr><td>Dark matter</td><td>1 &minus; (1&minus;p)<sup>n&minus;1</sup></td><td>0.261</td><td>0.261</td></tr>
+      <tr><td>Ordinary matter</td><td>p(1&minus;p)<sup>n&minus;1</sup></td><td>0.051</td><td>0.049</td></tr>
+      <tr><td>Newton&rsquo;s G</td><td>(k<sub>e</sub>e&sup2;/m<sub>p</sub>&sup2;)&thinsp;&times;&thinsp;&alpha;<sup>4&phi;&sup3;</sup></td><td>6.62&thinsp;&times;&thinsp;10<sup>&minus;11</sup></td><td>6.674&thinsp;&times;&thinsp;10<sup>&minus;11</sup></td></tr>
+      <tr><td>EM/gravity ratio</td><td>&alpha;<sup>&minus;4&phi;&sup3;</sup></td><td>10<sup>36.10</sup></td><td>10<sup>36.09</sup></td></tr>
+    </tbody>
+  </table>
+</section>
+
+<hr>
+
+<footer style="color: var(--muted); font-size: 0.85rem;">
+  <p>Topics: emergent time, recursive cosmology, golden ratio physics, dark-matter alternative, dark-energy explanation, gravitational constant derivation, KAM stability, fractal universe.</p>
+  <p>&copy; 2025 Lee &mdash; <a href="https://www.timesnotreal.com/">timesnotreal.com</a></p>
+</footer>
+
+</article>
+
+</body>
+</html>
