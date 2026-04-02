@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>There Is No Such Thing as Time — A Recursive Model of Emergent Time, Gravity &amp; the Dark Sector</title>
-  <meta name="description" content="A recursive cosmological model where time is emergent, gravity is inherited electromagnetism, and the dark sector arises from fractal frame nesting. Derives the fine structure constant and Newton's G from the golden ratio with 0.2% accuracy.">
+  <meta name="description" content="A recursive cosmological model where time is emergent, gravity is inherited electromagnetism, and the dark sector arises from fractal frame nesting. Derives α, G (0.2% accuracy), and the dark energy equation of state w₀ = −0.751 (matching DESI DR2) from the golden ratio — zero free parameters.">
   <meta name="keywords" content="emergent time, recursive cosmology, golden ratio physics, dark matter explanation, dark energy explanation, gravitational constant derivation, fine structure constant, fractal universe, KAM stability, time is not real, alternative gravity">
   <meta name="author" content="Lee Timmons">
   <link rel="canonical" href="https://www.timesnotreal.com/">
@@ -12,14 +12,14 @@
   <!-- Open Graph -->
   <meta property="og:type" content="article">
   <meta property="og:title" content="There Is No Such Thing as Time">
-  <meta property="og:description" content="A recursive cosmological model deriving the fine structure constant, dark energy, dark matter, and Newton's G from the golden ratio and EM polarization structure — with 0.2% accuracy.">
+  <meta property="og:description" content="A recursive cosmological model deriving α, dark energy equation of state (w₀ = −0.751, matching DESI DR2), dark matter, and Newton's G from the golden ratio — zero free parameters.">
   <meta property="og:url" content="https://www.timesnotreal.com/">
   <meta property="og:site_name" content="Time Is Not Real">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="There Is No Such Thing as Time">
-  <meta name="twitter:description" content="A recursive cosmological model deriving α, dark energy, dark matter, and Newton's G from the golden ratio — with 0.2% accuracy and zero free parameters.">
+  <meta name="twitter:description" content="A recursive cosmological model deriving α, the dark energy equation of state w₀ = −0.751 (matching DESI DR2), and Newton's G from the golden ratio — zero free parameters.">
 
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-0N9YBKF4XD"></script>
@@ -386,6 +386,47 @@
 </section>
 
 <section>
+  <h3>Dark energy equation of state &mdash; a zero-parameter prediction</h3>
+
+  <p>The model predicts today&rsquo;s dark energy fraction as (1&minus;p)<sup>n</sup> with recursion depth n&thinsp;=&thinsp;n<sub>0</sub>&thinsp;=&thinsp;2&phi;&sup2;. But n must depend on cosmic epoch &mdash; at earlier times the recursion was less deep. How does it evolve?</p>
+
+  <p>Recall that n<sub>0</sub>&thinsp;=&thinsp;d&thinsp;&times;&thinsp;&phi;<sup>d</sup>. This factors as d&thinsp;=&thinsp;2 polarization modes, each contributing &phi; to the recursion depth. Each mode&rsquo;s &ldquo;reach&rdquo; into the recursion is proportional to the scale factor a (how expanded the universe is at that epoch). At scale factor a:</p>
+
+  <p class="formula">n(a) = d &times; (&phi;&thinsp;a)<sup>d</sup> = n<sub>0</sub> &times; a&sup2;</p>
+
+  <p>At a&thinsp;=&thinsp;1 (today): n&thinsp;=&thinsp;n<sub>0</sub>. At a&thinsp;=&thinsp;0 (Big Bang): n&thinsp;=&thinsp;0 (no recursion yet). The dark energy density evolves as &rho;<sub>DE</sub>(a)&thinsp;&prop;&thinsp;(1&minus;p)<sup>n<sub>0</sub>&thinsp;a&sup2;</sup>.</p>
+
+  <p>From the cosmological continuity equation (d&rho;/da&thinsp;=&thinsp;&minus;3(1+w)&rho;/a), this gives the equation of state:</p>
+
+  <div class="result-box">
+    <p class="formula" style="font-size:1.25rem;">w(z) = &minus;1 + 0.2491 / (1+z)&sup2;</p>
+    <p><strong>Today (z&thinsp;=&thinsp;0): w&thinsp;=&thinsp;&minus;0.751</strong></p>
+    <p>The coefficient 0.2491&thinsp;=&thinsp;2n<sub>0</sub>|ln(1&minus;p)|/3 is entirely determined by &phi; and d&thinsp;=&thinsp;2. Zero free parameters.</p>
+  </div>
+
+  <table>
+    <thead><tr><th>Redshift z</th><th>w(z) predicted</th><th>Physical meaning</th></tr></thead>
+    <tbody>
+      <tr><td>0</td><td>&minus;0.751</td><td>Today: fuel actively depleting</td></tr>
+      <tr><td>0.5</td><td>&minus;0.889</td><td>When universe was 2/3 current size</td></tr>
+      <tr><td>1.0</td><td>&minus;0.938</td><td>Half current size</td></tr>
+      <tr><td>2.0</td><td>&minus;0.972</td><td>One-third current size</td></tr>
+      <tr><td>&infin;</td><td>&minus;1.000</td><td>Approaches cosmological constant</td></tr>
+    </tbody>
+  </table>
+
+  <p><strong>Comparison with DESI DR2 (March 2025).</strong> The <a href="https://arxiv.org/abs/2503.14738">DESI collaboration</a> measured baryon acoustic oscillations with 14 million galaxies and found 2.8&ndash;4.2&sigma; evidence that dark energy evolves (w&thinsp;&ne;&thinsp;&minus;1). Their best-fit present-day value: <strong>w<sub>0</sub>&thinsp;&asymp;&thinsp;&minus;0.75</strong>. Our prediction: <strong>w(z=0)&thinsp;=&thinsp;&minus;0.751</strong>.</p>
+
+  <p>The match at z&thinsp;=&thinsp;0 is striking, but the w(z) shapes diverge at higher redshift. DESI fits a linear (CPL) parameterization that requires <strong>phantom energy</strong> (w&thinsp;&lt;&thinsp;&minus;1) at z&thinsp;&gt;&thinsp;0.3. The recursive model instead follows a quadratic curve that <strong>never crosses the phantom divide</strong> &mdash; approaching w&thinsp;=&thinsp;&minus;1 from above at high z. This is physically required: the recursion can only consume fuel, never create it.</p>
+
+  <div class="callout">
+    <p><strong>Testable prediction:</strong> At z&thinsp;&gt;&thinsp;1, the model predicts w&thinsp;&asymp;&thinsp;&minus;0.94, while the standard DESI CPL fit predicts w&thinsp;&asymp;&thinsp;&minus;1.18 (phantom). Future Euclid, LSST, and DESI Year&thinsp;5 data at z&thinsp;&gt;&thinsp;1 will distinguish between these two very different predictions.</p>
+  </div>
+
+  <p>Physical interpretation: at early times (high z), the recursion had barely begun &mdash; nearly all energy was unprocessed fuel, behaving like a cosmological constant (w&thinsp;=&thinsp;&minus;1). As the universe expands, more recursion levels activate, converting fuel into structure. The quadratic shape (a&sup2;) arises because d&thinsp;=&thinsp;2 polarization modes each contribute independently to the recursion rate, and their effects compound as a<sup>d</sup>&thinsp;=&thinsp;a&sup2;.</p>
+</section>
+
+<section>
   <h3>Deriving &alpha; from &phi;</h3>
 
   <p>With DE/DM&thinsp;=&thinsp;&phi;&sup2; as a constraint (from d&thinsp;=&thinsp;2 EM polarization structure), the fine structure constant is no longer an independent input &mdash; it is determined by the recursion. The algebra yields:</p>
@@ -459,6 +500,7 @@
       <tr><td>Newton&rsquo;s G = 6.674&times;10<sup>&minus;11</sup></td><td>(k<sub>e</sub>e&sup2;/m<sub>p</sub>&sup2;)&thinsp;&times;&thinsp;&alpha;<sup>4&phi;&sup3;</sup></td><td class="pass">&check; 0.2% accuracy</td></tr>
       <tr><td>Gravity universally attractive</td><td>KK-like projection: only neutral zero-mode crosses frame boundaries</td><td class="pass">&check; qualitative</td></tr>
       <tr><td>Exponent 7 in p&thinsp;=&thinsp;2/&phi;<sup>7</sup></td><td>Transverse DoFs: 1 (scalar) + 2 (vector) + 4 (tensor) = Fano plane</td><td class="pass">&check; derived</td></tr>
+      <tr><td>Dark energy equation of state w(0)&thinsp;&asymp;&thinsp;&minus;0.75</td><td>Recursion depth scales as a&sup2;: w(z)&thinsp;=&thinsp;&minus;1&thinsp;+&thinsp;0.249/(1+z)&sup2;</td><td class="pass">&check; matches DESI DR2</td></tr>
     </tbody>
   </table>
 </section>
@@ -469,8 +511,8 @@
   <p>The model makes specific claims that can be tested:</p>
 
   <ol>
-    <li><strong>Dark energy is not a cosmological constant.</strong> In this model, dark energy is &ldquo;remaining fuel&rdquo; that diminishes as the recursion progresses. This requires the dark energy equation of state w&thinsp;&gt;&thinsp;&minus;1 (dark energy weakens over time). If w&thinsp;=&thinsp;&minus;1 exactly, this model is wrong.<br>
-    <em>Current evidence:</em> The <a href="https://www.desi.lbl.gov/">DESI collaboration (2024)</a> found &gt;2&sigma; evidence for evolving dark energy (w&thinsp;&ne;&thinsp;&minus;1), with dark energy appearing to weaken. This is directionally consistent but not unique confirmation &mdash; many non-&Lambda;CDM models predict evolving dark energy. Euclid and LSST will provide decisive tests.</li>
+    <li><strong>Dark energy is not a cosmological constant &mdash; and the model predicts exactly how it evolves.</strong> The specific prediction is w(z)&thinsp;=&thinsp;&minus;1&thinsp;+&thinsp;0.249/(1+z)&sup2;, giving w&thinsp;=&thinsp;&minus;0.751 today. If w&thinsp;=&thinsp;&minus;1 exactly, this model is wrong. If w&thinsp;&lt;&thinsp;&minus;1 at any epoch (phantom energy), this model is wrong.<br>
+    <em>Current evidence:</em> <a href="https://arxiv.org/abs/2503.14738">DESI DR2 (March 2025)</a> found 2.8&ndash;4.2&sigma; evidence for evolving dark energy with w<sub>0</sub>&thinsp;&asymp;&thinsp;&minus;0.75. Our prediction matches this central value to &lt;0.2%. The decisive test will come at z&thinsp;&gt;&thinsp;1: DESI&rsquo;s CPL fit requires phantom energy (w&thinsp;&lt;&thinsp;&minus;1), while our model predicts w approaches &minus;1 from above. Euclid and LSST will distinguish these by ~2028.</li>
 
     <li><strong>The ordinary matter fraction is predicted to 0.03%.</strong> The model predicts &Omega;<sub>b</sub>&thinsp;&asymp;&thinsp;0.04896 via OM&thinsp;=&thinsp;1&thinsp;&minus;&thinsp;(1&minus;p)<sup>n</sup>(3&minus;&phi;). The current Planck measurement is 0.04897&thinsp;&plusmn;&thinsp;0.0003. Future precision measurements of baryon density and the Hubble constant can further test this match.</li>
 
@@ -490,7 +532,7 @@
 
 <section>
   <h3>What this is</h3>
-  <p>This is a <strong>constrained numerical framework</strong> &mdash; a set of algebraic relationships that reproduce several cosmological observables from two physical inputs (&phi; and d&thinsp;=&thinsp;2). It is not yet a dynamical theory: it does not provide equations of motion, a Lagrangian, or field equations that can be evolved forward to predict phenomena like the CMB power spectrum, gravitational waveforms, or structure formation.</p>
+  <p>This is a <strong>constrained numerical framework</strong> &mdash; a set of algebraic relationships that reproduce several cosmological observables from two physical inputs (&phi; and d&thinsp;=&thinsp;2). It now includes a prediction for the late-time expansion history via w(z), but it is not yet a full dynamical theory: it does not provide field equations that can be evolved forward to predict the CMB power spectrum, gravitational waveforms, or structure formation.</p>
   <p>The distance between &ldquo;a framework that reproduces numbers&rdquo; and &ldquo;a theory that replaces GR + &Lambda;CDM&rdquo; is vast. General relativity is constrained by solar-system tests, gravitational time delay, frame-dragging, binary-pulsar timing, and LIGO/Virgo waveform matching. This framework does not yet compete in any of those dynamical regimes.</p>
 </section>
 
@@ -505,14 +547,15 @@
     <li><strong>Two independent derivations</strong> of &phi;: KAM stability (most irrational number) and scattering unitarity (unique self-similar lossless barrier)</li>
     <li>The exponent 7 in p&thinsp;=&thinsp;2/&phi;<sup>7</sup> is explained as transverse field DoFs by tensor rank (1+2+4), connecting to the Fano plane and octonion algebra</li>
     <li>The charge structure problem (EM screened, gravity not) is resolved by Kaluza&ndash;Klein-like projection across 7 compact DoFs</li>
-    <li>DESI&rsquo;s 2024 evidence for evolving dark energy is directionally consistent with the &ldquo;fuel runs out&rdquo; prediction</li>
+    <li>The dark energy equation of state w(z)&thinsp;=&thinsp;&minus;1&thinsp;+&thinsp;0.249/(1+z)&sup2; predicts w<sub>0</sub>&thinsp;=&thinsp;&minus;0.751, matching <a href="https://arxiv.org/abs/2503.14738">DESI DR2&rsquo;s measured value (~&minus;0.75)</a> with zero free parameters</li>
+    <li>The model forbids phantom energy (w&thinsp;&lt;&thinsp;&minus;1), making a clean prediction against the standard CPL fit at z&thinsp;&gt;&thinsp;1</li>
   </ul>
 </section>
 
 <section>
   <h3>What remains open</h3>
   <ul>
-    <li><strong>No dynamical equations.</strong> The model partitions energy but does not derive an expansion history, CMB anisotropies, big bang nucleosynthesis, or structure formation. A candidate Lagrangian &mdash; a 7-field scalar theory with Fano-plane cubic interactions and coupling &radic;&phi; &mdash; has been identified, but its renormalization group flow has not yet been shown to reproduce the recursion structure. The cubic Fano coupling is marginal in D&thinsp;=&thinsp;6 (4D spacetime + 2D transverse EM plane), suggesting the theory is naturally six-dimensional.</li>
+    <li><strong>Partial dynamics only.</strong> The model now predicts the dark energy equation of state w(z)&thinsp;=&thinsp;&minus;1&thinsp;+&thinsp;0.249/(1+z)&sup2; and the resulting late-time expansion history. However, it does not yet derive CMB anisotropies, big bang nucleosynthesis, or structure formation from first principles. A candidate Lagrangian &mdash; a 7-field scalar theory with Fano-plane cubic interactions and coupling &radic;&phi; &mdash; has been identified, but its renormalization group flow has not yet been shown to reproduce the recursion structure. The cubic Fano coupling is marginal in D&thinsp;=&thinsp;6 (4D spacetime + 2D transverse EM plane), suggesting the theory is naturally six-dimensional.</li>
 
     <li><strong>Frame-dragging.</strong> Lense&ndash;Thirring precession is a vector (gravitomagnetic) effect. If gravity is inherited EM from a parent frame with full vector structure, frame-dragging could emerge naturally from the angular momentum of that parent structure. This needs detailed calculation.</li>
 
@@ -547,7 +590,7 @@
     <dd>At the observational level, no &mdash; it reproduces time dilation, the dark sector, &alpha;, and G. At the theoretical level, a discrete universal &ldquo;beat&rdquo; implies a preferred frame, which would violate Lorentz invariance. If the beat frequency is at or near the Planck scale (~10<sup>44</sup>&thinsp;Hz), violations would be far below current detection thresholds. However, this needs rigorous showing, not just assertion.</dd>
 
     <dt>What would kill this model?</dt>
-    <dd>Several things: (1) DESI/Euclid/LSST confirming w&thinsp;=&thinsp;&minus;1 exactly (dark energy is a cosmological constant, not fuel); (2) a measurement of G that diverges from the formula beyond ~0.5%; (3) a precise QED calculation showing &alpha;(m<sub>p</sub>) differs from 1/134.89 by more than a few percent; (4) a precision baryon fraction measurement inconsistent with the DE/DM&thinsp;=&thinsp;&phi;&sup2; partition; (5) detection of Lorentz invariance violation at a scale inconsistent with the model.</dd>
+    <dd>Several things: (1) Precision measurement confirming w&thinsp;=&thinsp;&minus;1 exactly, or finding w&thinsp;&lt;&thinsp;&minus;1 (phantom energy) at any epoch &mdash; the model predicts w(z)&thinsp;=&thinsp;&minus;1&thinsp;+&thinsp;0.249/(1+z)&sup2; and forbids phantom crossing; (2) a measurement of G that diverges from the formula beyond ~0.5%; (3) a precise QED calculation showing &alpha;(m<sub>p</sub>) differs from 1/134.89 by more than a few percent; (4) a precision baryon fraction measurement inconsistent with the DE/DM&thinsp;=&thinsp;&phi;&sup2; partition; (5) detection of Lorentz invariance violation at a scale inconsistent with the model.</dd>
 
     <dt>Is this a theory or a speculation?</dt>
     <dd>Currently, it is closer to what a physicist would call a &ldquo;constrained numerical framework&rdquo; or a &ldquo;speculative research program.&rdquo; It reproduces observables but does not yet derive them from deeper axioms via dynamical equations. The next step &mdash; formulating equations of motion that can predict the CMB power spectrum, gravitational waveforms, and other precision tests &mdash; is what would promote it from framework to theory.</dd>
@@ -582,6 +625,7 @@
       <tr><td>Recursion depth</td><td>n = d&thinsp;&phi;<sup>d</sup> = 2&phi;&sup2;</td><td>5.236</td></tr>
       <tr><td>Attenuation per boundary</td><td>&alpha;(m<sub>p</sub>)<sup>d&phi;</sup></td><td>1.28&thinsp;&times;&thinsp;10<sup>&minus;7</sup></td></tr>
       <tr><td>Total attenuation exponent</td><td>d&sup2;&thinsp;&phi;<sup>d+1</sup> = 4&phi;&sup3;</td><td>16.944</td></tr>
+      <tr><td>DE equation of state</td><td>w(z) = &minus;1 + 2n|ln(1&minus;p)|/(3(1+z)&sup2;)</td><td>&minus;0.751 at z=0</td></tr>
     </tbody>
   </table>
 
@@ -595,6 +639,7 @@
       <tr><td>1/&alpha;(m<sub>p</sub>)</td><td>(121&phi; + 74)/2</td><td>134.89</td><td>~134&ndash;136</td></tr>
       <tr><td>Newton&rsquo;s G</td><td>(k<sub>e</sub>e&sup2;/m<sub>p</sub>&sup2;)&thinsp;&times;&thinsp;&alpha;<sup>4&phi;&sup3;</sup></td><td>6.69&thinsp;&times;&thinsp;10<sup>&minus;11</sup></td><td>6.674&thinsp;&times;&thinsp;10<sup>&minus;11</sup></td></tr>
       <tr><td>EM/gravity ratio</td><td>&alpha;<sup>&minus;4&phi;&sup3;</sup></td><td>10<sup>36.09</sup></td><td>10<sup>36.09</sup></td></tr>
+      <tr><td>DE equation of state w<sub>0</sub></td><td>&minus;1 + 2n<sub>0</sub>|ln(1&minus;p)|/3</td><td>&minus;0.751</td><td>&asymp;&minus;0.75 (DESI DR2)</td></tr>
     </tbody>
   </table>
 </section>
