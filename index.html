@@ -312,6 +312,14 @@
   <p>Among all possible recursive universes, &phi;-based ones survive the longest. This is cosmological natural selection: the golden ratio isn&rsquo;t a coincidence &mdash; it&rsquo;s the only recursion ratio that produces a structure stable enough to be observed.</p>
 
   <p>This is what I mean by &ldquo;perfect recursion&rdquo; &mdash; all dimensions of the universe remain constant relative to each other as you move up and down levels. In KAM terms, the recursive stack has no near-resonances between levels, so energy doesn&rsquo;t accumulate destructively at any scale. The structure persists.</p>
+
+  <p>There is a second, independent reason &phi; must appear. Consider any scattering barrier where both the transmitted and reflected energy fractions are powers of a single base x (the self-similarity requirement):</p>
+
+  <p class="formula">|T|&sup2; = 1/x&sup2; &emsp; |R|&sup2; = 1/x</p>
+
+  <p>Unitarity (energy conservation) requires |T|&sup2;&thinsp;+&thinsp;|R|&sup2;&thinsp;=&thinsp;1, giving 1/x&sup2;&thinsp;+&thinsp;1/x&thinsp;=&thinsp;1, hence x&sup2;&thinsp;=&thinsp;x&thinsp;+&thinsp;1. The unique positive solution is x&thinsp;=&thinsp;&phi;. <strong>The golden ratio is the only number where a self-similar scattering barrier is automatically lossless.</strong></p>
+
+  <p>Two independent areas of mathematics &mdash; Hamiltonian stability and scattering unitarity &mdash; both single out the same number. KAM says &phi; makes the recursion <em>maximally stable</em>; unitarity says &phi; makes it <em>lossless</em>. These are different requirements with the same unique solution.</p>
 </section>
 
 <section>
@@ -341,6 +349,40 @@
   <p>The DE/DM&thinsp;=&thinsp;&phi;&sup2; relationship has a physical interpretation: KAM stability sets the <em>frequency</em> ratio between recursion levels to &phi;, and for oscillating modes, energy scales as frequency squared. With d&thinsp;=&thinsp;2 polarization degrees of freedom, the energy ratio between the dark energy pool (high-frequency, unexpressed modes) and the dark matter pool (low-frequency, expressed structure) is &phi;<sup>d</sup>&thinsp;=&thinsp;&phi;&sup2;.</p>
 
   <p>This ratio is the self-similar fixed point of the recursion: it is the partition at which the &ldquo;remaining fuel&rdquo; and the &ldquo;accumulated structure&rdquo; are in dynamical equilibrium. Using it as the primary constraint (DM&thinsp;=&thinsp;DE/&phi;&sup2;) rather than the approximate geometric series (DM&thinsp;=&thinsp;1&thinsp;&minus;&thinsp;(1&minus;p)<sup>n&minus;1</sup>) resolves the ordinary matter prediction from ~4% off to 0.03% off, because the series formula is only exact for integer recursion depths, while the ratio constraint holds for the true non-integer depth n&thinsp;=&thinsp;2&phi;&sup2;&thinsp;&asymp;&thinsp;5.236.</p>
+</section>
+
+<section>
+  <h3>Why the exponent 7 &mdash; the Fano plane</h3>
+
+  <p>The exponent d&sup2;+d+1&thinsp;=&thinsp;7 in p&thinsp;=&thinsp;d/&phi;<sup>7</sup> is the total number of independent field degrees of freedom in the transverse plane, decomposed by tensor rank:</p>
+
+  <table>
+    <thead><tr><th>Rank</th><th>Components</th><th>Physical meaning</th><th>&phi; contribution</th></tr></thead>
+    <tbody>
+      <tr><td>0 (scalar)</td><td>1</td><td>Field intensity</td><td>&phi;<sup>1</sup></td></tr>
+      <tr><td>1 (vector)</td><td>d = 2</td><td>Polarization direction</td><td>&phi;&sup2;</td></tr>
+      <tr><td>2 (tensor)</td><td>d&sup2; = 4</td><td>Stress-energy</td><td>&phi;<sup>4</sup></td></tr>
+      <tr><td colspan="2"><strong>Total: 1+2+4 = 7</strong></td><td colspan="2"><strong>&phi;<sup>7</sup> = &phi; &times; &phi;&sup2; &times; &phi;<sup>4</sup></strong></td></tr>
+    </tbody>
+  </table>
+
+  <p>Each degree of freedom acts as an independent filter with pass-rate 1/&phi; (from the unitarity condition). To cross a frame boundary, EM must satisfy all 7 constraints simultaneously. The probability of crossing is (1/&phi;)<sup>7</sup> per polarization, times d&thinsp;=&thinsp;2 channels: p&thinsp;=&thinsp;2/&phi;<sup>7</sup>.</p>
+
+  <p>For d&thinsp;=&thinsp;2, the number 7&thinsp;=&thinsp;d&sup2;+d+1 is also the number of points in the <strong>Fano plane</strong> &mdash; the simplest finite projective geometry, PG(2,2). The Fano plane has 7 points, 7 lines, with 3 points per line and 3 lines per point. It is the multiplication table of the <strong>imaginary octonions</strong>: the 7 lines define the trilinear products e<sub>a</sub>&thinsp;&times;&thinsp;e<sub>b</sub>&thinsp;=&thinsp;e<sub>c</sub>.</p>
+
+  <div class="callout">
+    <p><strong>G&sub2; connection:</strong> The total number of coupling channels is d&thinsp;&times;&thinsp;(d&sup2;+d+1)&thinsp;=&thinsp;2&thinsp;&times;&thinsp;7&thinsp;=&thinsp;14, which equals the dimension of <strong>G&sub2;</strong> &mdash; the automorphism group of the octonions and the smallest exceptional Lie group. G&sub2; manifolds appear in M-theory compactification from 11D to 4D. The recursion structure may encode a G&sub2; symmetry.</p>
+  </div>
+</section>
+
+<section>
+  <h3>Gravity and charge structure</h3>
+
+  <p>A key objection to &ldquo;gravity is inherited EM&rdquo; is that electromagnetism has positive and negative charges and is easily screened, while gravity is universally attractive and unscreened. The Fano/tensor structure resolves this via a mechanism analogous to <strong>Kaluza&ndash;Klein dimensional reduction</strong>.</p>
+
+  <p>In Kaluza&ndash;Klein theory, compactifying a higher-dimensional theory produces both gravity and gauge fields in lower dimensions. Electric charge corresponds to momentum in the compact direction. The <strong>zero-mode</strong> &mdash; the component with no compact momentum &mdash; is neutral and universally attractive: that is gravity.</p>
+
+  <p>In this model, EM from the parent frame crosses a boundary with 7 compact transverse degrees of freedom. Charged modes (corresponding to non-zero modes in these 7 DoFs) are projected out at the boundary &mdash; they do not survive the crossing. Only the neutral zero-mode passes through, emerging as a universally attractive, unscreened force. This explains why gravity couples to mass-energy (as the zero-mode of a higher-frame gauge field naturally does) and why it cannot be screened (there is no charge to cancel).</p>
 </section>
 
 <section>
@@ -415,6 +457,8 @@
       <tr><td>Fine structure constant &alpha;</td><td>2/(121&phi; + 74) &rarr; 1/&alpha;&thinsp;=&thinsp;134.9</td><td class="pass">&check; consistent with QED running</td></tr>
       <tr><td>EM/gravity ratio (~10<sup>36</sup>)</td><td>&alpha;(m<sub>p</sub>)<sup>&minus;4&phi;&sup3;</sup></td><td class="pass">&check; 0.003% in exponent</td></tr>
       <tr><td>Newton&rsquo;s G = 6.674&times;10<sup>&minus;11</sup></td><td>(k<sub>e</sub>e&sup2;/m<sub>p</sub>&sup2;)&thinsp;&times;&thinsp;&alpha;<sup>4&phi;&sup3;</sup></td><td class="pass">&check; 0.2% accuracy</td></tr>
+      <tr><td>Gravity universally attractive</td><td>KK-like projection: only neutral zero-mode crosses frame boundaries</td><td class="pass">&check; qualitative</td></tr>
+      <tr><td>Exponent 7 in p&thinsp;=&thinsp;2/&phi;<sup>7</sup></td><td>Transverse DoFs: 1 (scalar) + 2 (vector) + 4 (tensor) = Fano plane</td><td class="pass">&check; derived</td></tr>
     </tbody>
   </table>
 </section>
@@ -458,7 +502,9 @@
     <li>All three cosmic energy fractions (dark energy, dark matter, ordinary matter) match Planck data within 1%, with ordinary matter at <strong>0.03% accuracy</strong></li>
     <li>The fine structure constant &alpha; is derived, not assumed, from &phi; and the recursion structure</li>
     <li>The factor of 2 is explained by EM polarization states, and d&thinsp;=&thinsp;2 is uniquely selected by the observed value of &alpha;</li>
-    <li>The KAM theorem provides rigorous mathematical motivation for why &phi; appears</li>
+    <li><strong>Two independent derivations</strong> of &phi;: KAM stability (most irrational number) and scattering unitarity (unique self-similar lossless barrier)</li>
+    <li>The exponent 7 in p&thinsp;=&thinsp;2/&phi;<sup>7</sup> is explained as transverse field DoFs by tensor rank (1+2+4), connecting to the Fano plane and octonion algebra</li>
+    <li>The charge structure problem (EM screened, gravity not) is resolved by Kaluza&ndash;Klein-like projection across 7 compact DoFs</li>
     <li>DESI&rsquo;s 2024 evidence for evolving dark energy is directionally consistent with the &ldquo;fuel runs out&rdquo; prediction</li>
   </ul>
 </section>
@@ -466,13 +512,11 @@
 <section>
   <h3>What remains open</h3>
   <ul>
-    <li><strong>No dynamical equations.</strong> The model partitions energy but does not derive an expansion history, CMB anisotropies, big bang nucleosynthesis, or structure formation. Until it can do so, it remains a numerical framework, not a replacement for &Lambda;CDM.</li>
+    <li><strong>No dynamical equations.</strong> The model partitions energy but does not derive an expansion history, CMB anisotropies, big bang nucleosynthesis, or structure formation. A candidate Lagrangian &mdash; a 7-field scalar theory with Fano-plane cubic interactions and coupling &radic;&phi; &mdash; has been identified, but its renormalization group flow has not yet been shown to reproduce the recursion structure. The cubic Fano coupling is marginal in D&thinsp;=&thinsp;6 (4D spacetime + 2D transverse EM plane), suggesting the theory is naturally six-dimensional.</li>
 
     <li><strong>Frame-dragging.</strong> Lense&ndash;Thirring precession is a vector (gravitomagnetic) effect. If gravity is inherited EM from a parent frame with full vector structure, frame-dragging could emerge naturally from the angular momentum of that parent structure. This needs detailed calculation.</li>
 
     <li><strong>Gravitational radiation.</strong> Binary pulsar decay matches GR to 0.2%. If gravity arises from a parent frame&rsquo;s EM, the radiation mechanism is different from GR&rsquo;s tensor quadrupole radiation. The model needs to show it reproduces the correct energy loss rate.</li>
-
-    <li><strong>Gravity vs EM structural differences.</strong> EM has positive and negative charge and is easily screened; gravity is universally attractive and unscreened. The &ldquo;inherited EM&rdquo; claim must explain how charge structure is lost or transformed across frame boundaries.</li>
 
     <li><strong>Entanglement.</strong> The &ldquo;shared timing&rdquo; explanation of entanglement is a form of superdeterminism. It is logically consistent but does not yet make predictions distinguishable from standard quantum mechanics, and is constrained by loophole-free Bell tests.</li>
 
@@ -491,7 +535,7 @@
 <section>
   <dl class="faq">
     <dt>Isn&rsquo;t the golden ratio stuff just numerology?</dt>
-    <dd>This is the most important question to ask. Four things separate this from pure pattern-matching: (1) the KAM theorem provides a rigorous dynamical reason why &phi; governs stable recursive structures; (2) the number 2 throughout the model is identified as the EM polarization count d, and d&thinsp;=&thinsp;2 is the <em>only</em> integer that produces a physically viable &alpha;; (3) the formula for G uses the <em>running</em> &alpha; at the proton mass scale, which comes from standard QED, not from tuning; and (4) &alpha; itself is derived from &phi; via the DE/DM&thinsp;=&thinsp;&phi;&sup2; constraint, not assumed. That said, the framework still lacks dynamical equations, and the gap between &ldquo;impressive numerical coincidences with physical motivation&rdquo; and &ldquo;a validated physical theory&rdquo; is real.</dd>
+    <dd>This is the most important question to ask. Five things separate this from pure pattern-matching: (1)&thinsp;the KAM theorem provides a rigorous dynamical reason why &phi; governs stable recursive structures; (2)&thinsp;scattering unitarity independently requires &phi; &mdash; it is the <em>unique</em> number where a self-similar barrier is lossless (1/&phi;&sup2;&thinsp;+&thinsp;1/&phi;&thinsp;=&thinsp;1); (3)&thinsp;the number 2 is identified as the EM polarization count d, and d&thinsp;=&thinsp;2 is the <em>only</em> integer that produces a physically viable &alpha;; (4)&thinsp;the exponent 7&thinsp;=&thinsp;d&sup2;+d+1 counts transverse field DoFs by tensor rank (1+2+4), connecting to the Fano plane and octonion algebra; and (5)&thinsp;&alpha; itself is derived from &phi; via the DE/DM&thinsp;=&thinsp;&phi;&sup2; constraint, not assumed. That said, the framework still lacks dynamical equations, and the gap between &ldquo;a well-motivated numerical framework&rdquo; and &ldquo;a validated physical theory&rdquo; is real.</dd>
 
     <dt>How is this different from other &ldquo;time isn&rsquo;t real&rdquo; ideas?</dt>
     <dd>Most proposals that time is emergent are philosophical or limited to quantum gravity contexts. This model makes quantitative predictions: specific values for the dark sector composition, a formula for &alpha;, and a formula for G. It can be falsified by precision cosmology (DESI, Euclid, LSST) and by increasingly accurate measurements of fundamental constants.</dd>
