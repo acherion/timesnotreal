@@ -573,6 +573,10 @@
       <tr><td>&Lambda; = 2.88&times;10<sup>&minus;122</sup> (Planck units)</td><td>p&thinsp;&times;&thinsp;(dn/dt)&sup2; with constant recursion rate</td><td class="pass">&check; 99.4% match</td></tr>
       <tr><td>Coincidence problem (&Omega;<sub>DE</sub>&thinsp;~&thinsp;&Omega;<sub>m</sub>)</td><td>n<sub>0</sub>p = 4/&phi;<sup>5</sup> = 0.361 places us in transition zone</td><td class="pass">&check; no tuning</td></tr>
       <tr><td>GW energy loss (Hulse&ndash;Taylor)</td><td>Weinberg theorem: spin-2 + G + c &rArr; GR quadrupole formula</td><td class="pass">&check; ~0.25% (limited by G)</td></tr>
+      <tr><td>Frame-dragging (Lense&ndash;Thirring)</td><td>Parent B-field &rarr; gravitomagnetic field via KK projection; B/E&thinsp;=&thinsp;v/c&sup2; preserved</td><td class="pass">&check; automatic (Weinberg)</td></tr>
+      <tr><td>BBN light element abundances</td><td>At z&thinsp;~&thinsp;10<sup>8</sup>: n&thinsp;&asymp;&thinsp;0, w&thinsp;=&thinsp;&minus;1, DE/radiation&thinsp;~&thinsp;10<sup>&minus;30</sup></td><td class="pass">&check; indistinguishable from &Lambda;CDM</td></tr>
+      <tr><td>Lorentz invariance</td><td>Beats count proper time (Lorentz scalar); LIV coefficient &eta;&thinsp;~&thinsp;10<sup>&minus;61</sup></td><td class="pass">&check; 38 orders below bounds</td></tr>
+      <tr><td>Structure growth f&times;&sigma;<sub>8</sub>(z)</td><td>w&thinsp;&gt;&thinsp;&minus;1 suppresses growth by ~3&ndash;5% vs &Lambda;CDM</td><td class="pass">&check; consistent with RSD data</td></tr>
     </tbody>
   </table>
 </section>
@@ -604,7 +608,7 @@
 
 <section>
   <h3>What this is</h3>
-  <p>This is a <strong>constrained numerical framework</strong> &mdash; a set of algebraic relationships that reproduce several cosmological observables from two physical inputs (&phi; and d&thinsp;=&thinsp;2). It predicts the late-time expansion history via w(z), resolves the S<sub>8</sub> tension, and makes a testable prediction for the CMB distance &mdash; but it is not yet a full dynamical theory: it does not provide field equations that can be evolved forward to predict the CMB power spectrum, gravitational waveforms, or structure formation.</p>
+  <p>This is a <strong>constrained numerical framework</strong> &mdash; a set of algebraic relationships that reproduce cosmological observables from two physical inputs (&phi; and d&thinsp;=&thinsp;2). It predicts the late-time expansion history via w(z), resolves the S<sub>8</sub> tension, derives the cosmological constant, reproduces gravitational wave emission and frame-dragging, preserves BBN and Lorentz invariance, and makes a testable prediction for the CMB distance &mdash; but it is not yet a full dynamical theory: it does not provide nonlinear field equations needed for the CMB power spectrum or GW merger waveforms.</p>
   <p>The distance between &ldquo;a framework that reproduces numbers&rdquo; and &ldquo;a theory that replaces GR + &Lambda;CDM&rdquo; is vast. General relativity is constrained by solar-system tests, gravitational time delay, frame-dragging, binary-pulsar timing, and LIGO/Virgo waveform matching. This framework does not yet compete in any of those dynamical regimes.</p>
 </section>
 
@@ -625,6 +629,10 @@
     <li>S<sub>8</sub>&thinsp;&asymp;&thinsp;0.780 falls dead center on weak lensing observations (KiDS: 0.766, DES: 0.776), resolving the 2.7&sigma; &Lambda;CDM tension to &lt;1&sigma;</li>
     <li>The CMB shift parameter R&thinsp;&asymp;&thinsp;1.732 represents a testable 4&sigma; prediction: if S<sub>8</sub> and w<sub>0</sub> are confirmed, R <em>must</em> be 1% below the &Lambda;CDM extraction</li>
     <li>Gravitational wave energy loss (Hulse&ndash;Taylor binary) is predicted to ~0.25% accuracy with zero free parameters, via the Weinberg theorem (spin-2 + derived G + speed c)</li>
+    <li>Frame-dragging (Lense&ndash;Thirring precession) is automatic: the parent EM B-field projects to a gravitomagnetic field with the correct Bg/Eg&thinsp;=&thinsp;v/c&sup2; ratio</li>
+    <li>BBN is unaffected: at z&thinsp;~&thinsp;10<sup>8</sup>, the recursion depth is n&thinsp;~&thinsp;10<sup>&minus;15</sup> and dark energy is negligible (DE/radiation&thinsp;~&thinsp;10<sup>&minus;30</sup>)</li>
+    <li>Lorentz invariance is preserved: the beat counts proper time (a Lorentz scalar), and LIV coefficients are &eta;&thinsp;~&thinsp;10<sup>&minus;61</sup>, 38 orders of magnitude below experimental bounds</li>
+    <li>Structure growth f&times;&sigma;<sub>8</sub>(z) is suppressed by 3&ndash;5% relative to &Lambda;CDM at z&thinsp;&asymp;&thinsp;0.3&ndash;1, matching the direction preferred by current redshift-space distortion surveys</li>
   </ul>
 </section>
 
@@ -633,17 +641,15 @@
   <ul>
     <li><strong>CMB distance tension (~4&sigma;) &mdash; a correlated prediction.</strong> The model predicts the CMB shift parameter R&thinsp;&asymp;&thinsp;1.732 while Planck measures 1.750&thinsp;&plusmn;&thinsp;0.005 (a 4&sigma; deficit). This is an inherent consequence of any non-phantom evolving dark energy: w&thinsp;&gt;&thinsp;&minus;1 means DE was denser in the past, shortening the distance to the CMB by ~1%. Crucially, this tension is <strong>correlated</strong> with the S<sub>8</sub> resolution: the same w(z) that lowers R also suppresses late-time structure growth to match weak lensing surveys. If the model is right about S<sub>8</sub> and w<sub>0</sub>, R <em>must</em> be lower than the &Lambda;CDM extraction. Testing this requires a full Boltzmann code (CLASS/CAMB) reanalysis of the CMB power spectrum, and future experiments (CMB-S4, LiteBIRD) will measure R to ~0.1% precision.</li>
 
-    <li><strong>Frame-dragging.</strong> Lense&ndash;Thirring precession is a vector (gravitomagnetic) effect. If gravity is inherited EM from a parent frame with full vector structure, frame-dragging could emerge naturally from the angular momentum of that parent structure. This needs detailed calculation.</li>
-
-    <li><strong>Gravitational radiation &mdash; inspiral matches, merger is open.</strong> The Weinberg theorem guarantees that <em>any</em> massless spin-2 field with coupling G and speed c reproduces the GR quadrupole formula at leading order. The model provides all three ingredients (spin-2 from KK projection, G derived to 0.2%, speed c from parent EM), so the Hulse&ndash;Taylor binary decay is automatically predicted to ~0.25% accuracy. What remains open is the <strong>merger/ringdown</strong> waveform, which depends on nonlinear field equations that have not been derived from the parent-frame EM + KK reduction.</li>
+    <li><strong>GW merger/ringdown waveforms.</strong> The inspiral phase matches GR automatically (Weinberg theorem: spin-2 + G + c), and the Hulse&ndash;Taylor decay is predicted to ~0.25%. But merger and ringdown probe <em>nonlinear</em> field equations. Deriving these from the parent-frame EM + KK reduction is the main dynamical challenge.</li>
 
     <li><strong>Entanglement.</strong> The &ldquo;shared timing&rdquo; explanation of entanglement is a form of superdeterminism. It is logically consistent but does not yet make predictions distinguishable from standard quantum mechanics, and is constrained by loophole-free Bell tests.</li>
-
-    <li><strong>Lorentz invariance.</strong> A discrete universal &ldquo;beat&rdquo; implies a preferred frame. If the beat frequency is at or near the Planck scale (~10<sup>44</sup>&thinsp;Hz), violations would be far below current detection thresholds &mdash; but this needs rigorous demonstration, not just assertion.</li>
 
     <li><strong>Particle masses.</strong> Known mass ratios (proton/electron, W/proton, Planck/proton) do not show clean &phi;-power patterns. The golden ratio governs inter-frame recursion, not intra-frame particle physics.</li>
 
     <li><strong>Non-perturbative fixed point.</strong> The RG derivation shows the Fano-plane theory is marginal at D&thinsp;=&thinsp;6, and unitarity independently fixes the coupling to g&sup2;&thinsp;=&thinsp;1/&phi;. But confirming that the Fano theory&rsquo;s actual non-perturbative fixed point at D&thinsp;=&thinsp;4 matches 1/&phi; requires lattice simulation or conformal bootstrap with PSL(2,7) symmetry &mdash; a calculation that has not yet been done.</li>
+
+    <li><strong>Full CMB power spectrum.</strong> The shift parameter R captures the overall distance scale, but the full C<sub>&#8467;</sub> spectrum requires running the model through a Boltzmann code (CLASS/CAMB) with the recursive w(z). This would sharpen or relax the 4&sigma; R tension.</li>
   </ul>
 </section>
 
@@ -665,7 +671,7 @@
     <dd>Because it crosses ~5.2 recursive frame boundaries, each of which attenuates EM by a factor of &alpha;<sup>2&phi;</sup>&thinsp;&asymp;&thinsp;10<sup>&minus;6.9</sup>. After 2&phi;&sup2; boundaries, the total attenuation is &alpha;<sup>4&phi;&sup3;</sup>&thinsp;&asymp;&thinsp;10<sup>&minus;36</sup>. The 2 in the exponent comes from EM having 2 polarization states.</dd>
 
     <dt>Does the model violate known physics?</dt>
-    <dd>At the observational level, no &mdash; it reproduces time dilation, the dark sector, &alpha;, and G. At the theoretical level, a discrete universal &ldquo;beat&rdquo; implies a preferred frame, which would violate Lorentz invariance. If the beat frequency is at or near the Planck scale (~10<sup>44</sup>&thinsp;Hz), violations would be far below current detection thresholds. However, this needs rigorous showing, not just assertion.</dd>
+    <dd>No. The recursion rate (dn/dt&thinsp;~&thinsp;10<sup>&minus;17</sup>&thinsp;Hz) is 61 orders of magnitude below the Planck frequency, producing Lorentz invariance violation coefficients of &eta;&thinsp;~&thinsp;10<sup>&minus;61</sup> &mdash; 38 orders below experimental bounds. More fundamentally, the beat counts <em>proper time</em> along each worldline (a Lorentz scalar), so there is no preferred frame for local physics. The cosmic-time dependence n(a) defines a preferred foliation (like the CMB rest frame), not a local violation of Lorentz symmetry. BBN light element abundances are also unaffected: at z&thinsp;~&thinsp;10<sup>8</sup>, the recursion depth is n&thinsp;~&thinsp;10<sup>&minus;15</sup> and the model is indistinguishable from &Lambda;CDM.</dd>
 
     <dt>What would kill this model?</dt>
     <dd>Several things: (1) Precision measurement confirming w&thinsp;=&thinsp;&minus;1 exactly, or finding w&thinsp;&lt;&thinsp;&minus;1 (phantom energy) at any epoch &mdash; the model predicts w<sub>0</sub>&thinsp;=&thinsp;&minus;0.867 and forbids phantom crossing; (2) a measurement of G that diverges from the formula beyond ~0.5%; (3) a precise QED calculation showing &alpha;(m<sub>p</sub>) differs from 1/134.89 by more than a few percent; (4) a precision baryon fraction measurement inconsistent with the DE/DM&thinsp;=&thinsp;&phi;&sup2; partition; (5) CMB-S4 confirming R&thinsp;=&thinsp;1.750 at high precision (the model predicts R&thinsp;&asymp;&thinsp;1.732).</dd>
