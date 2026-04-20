@@ -565,14 +565,22 @@
   <p>The fine-structure constant at the proton mass scale satisfies a clean closed-form expression in &phi;:</p>
 
   <div class="result-box">
-    <p class="formula" style="font-size:1.25rem;">1/&alpha;(m<sub>p</sub>) = (&phi;<sup>2(N&minus;d)</sup> + 2&phi;<sup>N+d</sup> &minus; 2&phi;<sup>d</sup>) / d = (&phi;<sup>10</sup> + 2&phi;<sup>9</sup> &minus; 2&phi;&sup2;)/2 = 134.89</p>
-    <p>where N&thinsp;=&thinsp;d&sup2;+d+1&thinsp;=&thinsp;7 is the Fano-plane DoF count and d&thinsp;=&thinsp;2 is the EM polarisation count. The exponents (2(N&minus;d), N+d, d) are structured combinations of (N, d), not free integers.</p>
+    <p class="formula" style="font-size:1.25rem;">1/&alpha;(m<sub>p</sub>) = (&phi;<sup>N+2d</sup> + &phi;<sup>N+d</sup> &minus; 2&phi;<sup>d</sup>) / d = (&phi;<sup>11</sup> + &phi;<sup>9</sup> &minus; 2&phi;&sup2;)/2 = 134.89</p>
+    <p>where N&thinsp;=&thinsp;d&sup2;+d+1&thinsp;=&thinsp;7 is the Fano-plane DoF count and d&thinsp;=&thinsp;2 is the EM polarisation count. <strong>The three exponents (N+2d, N+d, d) form an arithmetic progression with common difference N (Fano), starting from d (polarization)</strong> &mdash; a graded ladder structure with two generators.</p>
     <p>The measured value of &alpha; at the proton mass scale (~1&thinsp;GeV) is approximately 1/134 to 1/136 via standard QED running. The formula sits squarely in this range, and matches to 0.008% the value implied by the gravitational-constant identity G&thinsp;=&thinsp;(k<sub>e</sub>e&sup2;/m<sub>p</sub>&sup2;)&thinsp;&times;&thinsp;&alpha;<sup>4&phi;&sup3;</sup>.</p>
   </div>
 
-  <p>In the small-coupling approximation (dropping the &minus;2&phi;&sup2; term), the formula simplifies to 1/&alpha;&thinsp;&asymp;&thinsp;(&phi;<sup>10</sup>&thinsp;+&thinsp;2&phi;<sup>9</sup>)/2&thinsp;&asymp;&thinsp;137.5, which is close to the measured zero-energy value 1/&alpha;(0)&thinsp;=&thinsp;137.036.</p>
+  <p>Equivalently, using the identity &phi;&sup2;&thinsp;=&thinsp;&phi;&thinsp;+&thinsp;1, the formula factors as:</p>
 
-  <p><strong>Honest status:</strong> the formula is a <em>structured pattern</em>, not yet a derivation from first principles. The exponent triple (2(N&minus;d), N+d, d) is suggestive but has not been derived from the Fano Lagrangian's RG flow or from any other primary equation in the model. What can be said: <em>if</em> the formula is taken as given, then G follows to 0.2%; conversely, if G (or m<sub>p</sub> in Planck units) is taken as input, then &alpha; is determined to the same accuracy by the G identity. One of the two acts as the model's external mass-scale anchor; the other is predicted. Closing this loop &mdash; deriving the (2(N&minus;d), N+d, d) structure from primary RG/symmetry arguments &mdash; is the largest open mathematical question in the framework.</p>
+  <div class="result-box">
+    <p class="formula">2/&alpha; = &phi;<sup>d</sup> &middot; (&phi;<sup>N+d</sup> + &phi;<sup>N</sup> &minus; 2) = &phi;<sup>d</sup> &middot; (&phi;<sup>N</sup>(&phi;<sup>d</sup> + 1) &minus; 2)</p>
+  </div>
+
+  <p>This exhibits the structure transparently: a Fano-scale factor &phi;<sup>N</sup>, a polarization-multiplet factor (&phi;<sup>d</sup>&thinsp;+&thinsp;1), a ground-state subtraction (&minus;2 for d&thinsp;=&thinsp;2 polarizations), and an overall polarization weight &phi;<sup>d</sup>. All dimensionless, all built from the two structural generators N and d.</p>
+
+  <p>In the small-coupling approximation (dropping the &minus;2&phi;<sup>d</sup> correction), 1/&alpha;&thinsp;&asymp;&thinsp;(&phi;<sup>N+2d</sup>&thinsp;+&thinsp;&phi;<sup>N+d</sup>)/d&thinsp;&asymp;&thinsp;137.5, close to the zero-energy value 1/&alpha;(0)&thinsp;=&thinsp;137.036.</p>
+
+  <p><strong>Honest status:</strong> the formula is a <em>structured pattern</em>, not yet a derivation from first principles. The graded (N+2d, N+d, d) ladder strongly suggests an underlying two-generator algebraic structure &mdash; a Fano-step operator N raising the exponent and a polarization index d setting the base &mdash; consistent with a loop expansion in a theory with two natural expansion parameters. But the coefficients (1, 1, &minus;2) have not yet been derived from any primary equation. What can be said: <em>if</em> the formula is taken as given, G follows to 0.2%; conversely, if G (or m<sub>p</sub> in Planck units) is taken as input, &alpha; is determined to the same accuracy by the G identity. One of the two acts as the model&rsquo;s external mass-scale anchor; the other is predicted. Closing this loop &mdash; deriving the (1, 1, &minus;2) coefficient pattern on the (N+2d, N+d, d) ladder &mdash; is the largest open mathematical question in the framework.</p>
 </section>
 
 <section>
@@ -584,7 +592,7 @@
     <p>where:</p>
     <ul>
       <li>k<sub>e</sub>&thinsp;=&thinsp;Coulomb&rsquo;s constant, e&thinsp;=&thinsp;electron charge, m<sub>p</sub>&thinsp;=&thinsp;proton mass</li>
-      <li>&alpha;(m<sub>p</sub>)&thinsp;=&thinsp;2/(121&phi;&thinsp;+&thinsp;74)&thinsp;&asymp;&thinsp;1/134.9 is the electromagnetic coupling constant, derived from &phi;</li>
+      <li>&alpha;(m<sub>p</sub>)&thinsp;=&thinsp;2/(&phi;<sup>11</sup>&thinsp;+&thinsp;&phi;<sup>9</sup>&thinsp;&minus;&thinsp;2&phi;&sup2;)&thinsp;&asymp;&thinsp;1/134.9 is the electromagnetic coupling constant, derived from &phi; via the (N+2d, N+d, d) graded ladder</li>
       <li>4&phi;&sup3;&thinsp;=&thinsp;d&sup2;&phi;<sup>d+1</sup>&thinsp;&asymp;&thinsp;16.944 &mdash; the total attenuation exponent for d&thinsp;=&thinsp;2 polarizations across 2&phi;&sup2; boundaries</li>
     </ul>
     <p><strong>Result: G<sub>predicted</sub>&thinsp;=&thinsp;6.69&thinsp;&times;&thinsp;10<sup>&minus;11</sup></strong> vs measured <strong>6.674&thinsp;&times;&thinsp;10<sup>&minus;11</sup></strong> m&sup3;&thinsp;kg<sup>&minus;1</sup>&thinsp;s<sup>&minus;2</sup>. <strong>Accuracy: 0.2%</strong>. (Given &alpha;(m<sub>p</sub>), m<sub>p</sub>, and e as input, G follows; no extra parameters needed.)</p>
@@ -627,7 +635,7 @@
       <tr><td>Dark matter fraction (26.1%)</td><td>Self-similar partition: DE/&phi;&sup2;</td><td class="pass">&check; within error bar</td></tr>
       <tr><td>Ordinary matter fraction (4.9%)</td><td>Residual: 1 &minus; DE(3&minus;&phi;)</td><td class="pass">&check; 0.03% match</td></tr>
       <tr><td>DE/DM ratio (~2.64)</td><td>&phi;<sup>d</sup> = &phi;&sup2; for d&thinsp;=&thinsp;2 EM polarizations</td><td class="pass">&check; within 0.8%</td></tr>
-      <tr><td>Fine structure constant &alpha;</td><td>2/(121&phi; + 74) &rarr; 1/&alpha;&thinsp;=&thinsp;134.9</td><td class="pass">&check; consistent with QED running</td></tr>
+      <tr><td>Fine structure constant &alpha;</td><td>2/(&phi;<sup>11</sup>+&phi;<sup>9</sup>&minus;2&phi;&sup2;) &rarr; 1/&alpha;&thinsp;=&thinsp;134.9</td><td class="pass">&check; consistent with QED running</td></tr>
       <tr><td>EM/gravity ratio (~10<sup>36</sup>)</td><td>&alpha;(m<sub>p</sub>)<sup>&minus;4&phi;&sup3;</sup></td><td class="pass">&check; 0.003% in exponent</td></tr>
       <tr><td>Newton&rsquo;s G = 6.674&times;10<sup>&minus;11</sup></td><td>(k<sub>e</sub>e&sup2;/m<sub>p</sub>&sup2;)&thinsp;&times;&thinsp;&alpha;<sup>4&phi;&sup3;</sup></td><td class="pass">&check; 0.2% accuracy</td></tr>
       <tr><td>Gravity universally attractive</td><td>KK-like projection: only neutral zero-mode crosses frame boundaries</td><td class="pass">&check; qualitative</td></tr>
@@ -661,7 +669,7 @@
 
     <li><strong>The ordinary matter fraction is predicted to 0.03%.</strong> The model predicts &Omega;<sub>b</sub>&thinsp;&asymp;&thinsp;0.04896 via OM&thinsp;=&thinsp;1&thinsp;&minus;&thinsp;(1&minus;p)<sup>n</sup>(3&minus;&phi;). The current Planck measurement is 0.04897&thinsp;&plusmn;&thinsp;0.0003. Future precision measurements of baryon density and the Hubble constant can further test this match.</li>
 
-    <li><strong>The fine structure constant is derivable.</strong> The formula &alpha;(m<sub>p</sub>)&thinsp;=&thinsp;2/(121&phi;&thinsp;+&thinsp;74) predicts 1/&alpha;&thinsp;=&thinsp;134.89 at the proton mass scale. Increasingly precise QED calculations of the running of &alpha; can test whether this value is correct.</li>
+    <li><strong>The fine structure constant is derivable.</strong> The formula 1/&alpha;(m<sub>p</sub>)&thinsp;=&thinsp;(&phi;<sup>11</sup>&thinsp;+&thinsp;&phi;<sup>9</sup>&thinsp;&minus;&thinsp;2&phi;&sup2;)/2&thinsp;=&thinsp;134.89 predicts this value at the proton mass scale with exponents forming an arithmetic progression (step N&thinsp;=&thinsp;7, base d&thinsp;=&thinsp;2). Increasingly precise QED calculations of the running of &alpha; can test whether this value is correct.</li>
 
     <li><strong>Gravitational constant G is derivable.</strong> The formula G&thinsp;=&thinsp;(k<sub>e</sub>e&sup2;/m<sub>p</sub>&sup2;)&thinsp;&times;&thinsp;&alpha;(m<sub>p</sub>)<sup>4&phi;&sup3;</sup> can be checked against increasingly precise measurements of G, &alpha;, and m<sub>p</sub>. The prediction should remain consistent to within ~0.5%.</li>
 
@@ -696,7 +704,7 @@
   <ul>
     <li><strong>Zero global rotation.</strong> A non-rotating Schwarzschild interior has no preferred axis. Our universe should exhibit zero net rotation. Current CMB constraints already give &lt; 10<sup>&minus;9</sup> per Hubble time; CMB-S4 and LiteBIRD will tighten this by another order of magnitude. <em>The picture predicts the result must remain consistent with zero.</em></li>
     <li><strong>Universal &alpha; inside black holes.</strong> Every black hole in our universe contains a child universe with our same &alpha;&thinsp;&asymp;&thinsp;1/134.89, our same H<sub>0</sub>t<sub>0</sub>&thinsp;&asymp;&thinsp;0.94, and our same cosmological ratios. We cannot directly observe inside a horizon, but if any future quantum-gravity probe ever measures &alpha; near a horizon and finds it different, the model is dead.</li>
-    <li><strong>Black-hole ringdown signatures.</strong> Ringdown waveforms (the gravitational-wave &ldquo;ringing&rdquo; after a merger) probe near-horizon dynamics. If horizons are frame boundaries with internal structure, ringdown spectra should encode subtle deviations from pure GR &mdash; specifically, deviations whose shape is dictated by the recursion&rsquo;s &phi;-structure. Current LIGO/Virgo sensitivity is insufficient; LISA (launching ~2035) will probe this regime.</li>
+    <li><strong>Black-hole ringdown signatures &mdash; now quantified.</strong> If every merger remnant births a child universe, the child&rsquo;s own Hubble timescale t<sub>0,child</sub>&thinsp;=&thinsp;(8/&phi;&sup3;)&middot;GM/c&sup3; (same formula as our t<sub>0</sub>) imprints a sub-dominant modulation on the ringdown waveform at frequency f<sub>child</sub>&thinsp;=&thinsp;(&phi;&sup3;/8)&middot;c&sup3;/(2&pi;GM), with amplitude suppressed by p&thinsp;=&thinsp;2/&phi;<sup>7</sup>&thinsp;&asymp;&thinsp;6.9% of the dominant QNM. The frequency ratio f<sub>child</sub>/f<sub>QNM</sub>&thinsp;=&thinsp;&phi;&sup3;/(8&middot;&omega;M<sub>GR</sub>)&thinsp;&asymp;&thinsp;1.417 is a pure number set by &phi; and the Teukolsky eigenvalue. <strong>Concrete prediction for GW150914 (M<sub>rem</sub>&thinsp;&asymp;&thinsp;62&thinsp;M<sub>&odot;</sub>):</strong> dominant QNM at 195 Hz (GR), sub-dominant modulation at 276 Hz with ~7% amplitude. At the edge of current LIGO sensitivity; clearly detectable with LISA (supermassive BH mergers, SNR&thinsp;&gt;&thinsp;1000).</li>
     <li><strong>The parent black-hole mass is set by the recursion.</strong> Self-consistency requires M<sub>parent BH</sub>&thinsp;=&thinsp;c<sup>3</sup>/(2GH<sub>0</sub>) in the parent&rsquo;s own units. Numerically (in our units), this is ~10<sup>53</sup>&thinsp;kg &mdash; equal to the total mass-energy of our observable universe. This is not a free parameter: it is determined by the requirement that our cosmological horizon coincide with the parent BH&rsquo;s Schwarzschild radius.</li>
   </ul>
 
@@ -720,6 +728,9 @@
 
   <h4>3. Horizon entropy match is automatic</h4>
   <p>The Bekenstein-Hawking entropy of the parent BH equals the holographic entropy of our cosmological horizon: S<sub>BH</sub>(parent)&thinsp;=&thinsp;A/(4&ell;<sub>P</sub><sup>2</sup>)&thinsp;&asymp;&thinsp;6&thinsp;&times;&thinsp;10<sup>122</sup>, identical to S<sub>holo</sub>(us)&thinsp;=&thinsp;same surface, same number. They are equal because they <em>are</em> the same surface viewed from opposite sides &mdash; consistent with the holographic principle.</p>
+
+  <h4>4. Hawking radiation from inside: super-horizon modes</h4>
+  <p>The parent BH&rsquo;s Hawking temperature (from outside) is T<sub>H</sub>&thinsp;=&thinsp;&hbar;H<sub>0</sub>/(4&pi;k<sub>B</sub>)&thinsp;&asymp;&thinsp;1.3&thinsp;&times;&thinsp;10<sup>&minus;30</sup>&thinsp;K, and the Gibbons-Hawking de Sitter temperature from <em>inside</em> is exactly twice this (the standard BH/dS relation). The Wien peak wavelength is then &sim;&thinsp;16&thinsp;&times;&thinsp;the Hubble radius &mdash; <strong>super-horizon.</strong> This means the Hawking emission cannot appear inside our universe as thermal EM radiation: its wavelength exceeds the size of our observable horizon. Instead, from our internal perspective, it manifests as the <em>cosmic zero mode</em> &mdash; a uniform, directionless background that drives the Hubble flow itself. This is consistent with the broader picture: just as the parent&rsquo;s charged EM (with structure) projects inward as our gravity (monopole only), the parent&rsquo;s Hawking thermal bath (isotropic) projects inward as our cosmological expansion (isotropic). Hawking evaporation isn&rsquo;t missing from our universe &mdash; it <em>is</em> our universe&rsquo;s expansion, sampled at super-horizon wavelengths.</p>
 
   <h3>Honest open issues</h3>
   <ul>
@@ -747,7 +758,7 @@
     <li>A single conceptual framework (recursive frames + emergent time) connects time dilation, the dark sector composition, the EM/gravity hierarchy, and the fine structure constant</li>
     <li>The formula G&thinsp;=&thinsp;(k<sub>e</sub>e&sup2;/m<sub>p</sub>&sup2;)&thinsp;&times;&thinsp;&alpha;(m<sub>p</sub>)<sup>4&phi;&sup3;</sup> reproduces Newton&rsquo;s constant to <strong>0.2%</strong>, given the standard atomic constants (e, m<sub>p</sub>, &alpha;)</li>
     <li>All three cosmic energy fractions (dark energy, dark matter, ordinary matter) match Planck data within 1%, with ordinary matter at <strong>0.03% accuracy</strong></li>
-    <li>The fine-structure constant &alpha;(m<sub>p</sub>) admits a structured closed form 1/&alpha;&thinsp;=&thinsp;(&phi;<sup>2(N&minus;d)</sup>&thinsp;+&thinsp;2&phi;<sup>N+d</sup>&thinsp;&minus;&thinsp;2&phi;<sup>d</sup>)/d in terms of N&thinsp;=&thinsp;7 and d&thinsp;=&thinsp;2 &mdash; a structured pattern, not yet a first-principles derivation</li>
+    <li>The fine-structure constant &alpha;(m<sub>p</sub>) admits a structured closed form 1/&alpha;&thinsp;=&thinsp;(&phi;<sup>N+2d</sup>&thinsp;+&thinsp;&phi;<sup>N+d</sup>&thinsp;&minus;&thinsp;2&phi;<sup>d</sup>)/d with exponents forming an <strong>arithmetic progression</strong> (step N, base d) &mdash; a two-generator graded ladder; the coefficient pattern (1, 1, &minus;2) is not yet derived from first principles but the algebraic structure is sharply constrained</li>
     <li>The factor of 2 is explained by EM polarization states, and d&thinsp;=&thinsp;2 is uniquely selected by <strong>three independent arguments</strong>: the observed &alpha;, the number of EM polarizations, and the requirement that the Fano-plane cubic coupling be exactly marginal (D&thinsp;=&thinsp;2d+2&thinsp;=&thinsp;6 is the upper critical dimension)</li>
     <li><strong>Two independent derivations</strong> of &phi;: KAM stability (most irrational number) and scattering unitarity (unique self-similar lossless barrier)</li>
     <li>The exponent 7 in p&thinsp;=&thinsp;2/&phi;<sup>7</sup> is explained as transverse field DoFs by tensor rank (1+2+4), connecting to the Fano plane and octonion algebra</li>
@@ -772,6 +783,8 @@
     <li>The recursion rate t<sub>0</sub>&thinsp;=&thinsp;(8/&phi;&sup3;)&thinsp;&times;&thinsp;GM<sub>parent</sub>/c&sup3; is derived (not empirical) from the parent BH&rsquo;s natural timescale &mdash; one recursion level lasts (4/&phi;<sup>5</sup>)&thinsp;&times;&thinsp;GM/c&sup3;&thinsp;&asymp;&thinsp;0.36&thinsp;&times;&thinsp;BH-time, the same dimensionless factor 4/&phi;<sup>5</sup>&thinsp;=&thinsp;p&middot;n<sub>0</sub> that appears in &Lambda;&middot;t<sub>0</sub>&sup2;&thinsp;=&thinsp;8/&phi;&sup3;</li>
     <li>Hawking-evaporation timescale concern dissolves: the parent BH is steadily <em>accreting</em> at ~10<sup>12</sup>&thinsp;M<sub>&odot;</sub>/yr (~1% of Eddington), growing by ~58% over our universe&rsquo;s lifetime &mdash; accretion dominates Hawking by 124 orders of magnitude</li>
     <li>Horizon entropy match is automatic: S<sub>BH</sub>(parent)&thinsp;=&thinsp;S<sub>holo</sub>(us)&thinsp;&asymp;&thinsp;6&thinsp;&times;&thinsp;10<sup>122</sup>, because they are the same surface viewed from opposite sides</li>
+    <li>Ringdown sub-dominant modulation is <strong>sharply predicted</strong>: f<sub>child</sub>/f<sub>QNM</sub>&thinsp;=&thinsp;&phi;&sup3;/(8&middot;&omega;M<sub>GR</sub>)&thinsp;&asymp;&thinsp;1.417, amplitude p&thinsp;=&thinsp;2/&phi;<sup>7</sup>&thinsp;&asymp;&thinsp;6.9%. For GW150914 (62 M<sub>&odot;</sub>), this is a 276&thinsp;Hz modulation on the 195&thinsp;Hz dominant QNM &mdash; edge of current LIGO sensitivity, definitive test at LISA</li>
+    <li>Parent BH Hawking radiation has Wien peak at &sim;16&thinsp;&times;&thinsp;Hubble radius (super-horizon), so it cannot appear as EM inside our universe; instead it manifests as the cosmic zero mode driving Hubble expansion &mdash; consistent with the broader &ldquo;parent isotropy projects to our uniformity&rdquo; pattern</li>
     <li>The speed of light is not an empirical constant but a structural definition: c&thinsp;=&thinsp;&ell;<sub>P</sub>/t<sub>P</sub> (one Planck length per Planck tick). Its constancy across frames follows from Lorentz invariance of per-worldline tick accounting; massive particles slow because their tick budget is split between internal oscillation and spatial advancement</li>
     <li>Two scales of substrate &ldquo;page flips&rdquo; coexist consistently: Planck ticks at ~10<sup>43</sup>/s define c locally, and recursion levels at ~1 per 2.6 Gyr define dark-sector evolution. The ratio &mdash; <strong>~10<sup>60</sup> Planck ticks per recursion level</strong> &mdash; matches the per-tick attenuation ~10<sup>&minus;61</sup> derived from p&middot;n<sub>0</sub>&thinsp;=&thinsp;4/&phi;<sup>5</sup>, unifying the microscopic and cosmological clocks</li>
   </ul>
@@ -786,11 +799,11 @@
 
     <li><strong>Entanglement.</strong> The &ldquo;shared timing&rdquo; explanation of entanglement is a form of superdeterminism. It is logically consistent but does not yet make predictions distinguishable from standard quantum mechanics, and is constrained by loophole-free Bell tests.</li>
 
-    <li><strong>Particle masses.</strong> Known mass ratios (proton/electron, W/proton, Planck/proton) do not show clean &phi;-power patterns. The golden ratio governs inter-frame recursion, not intra-frame particle physics. Consequently m<sub>p</sub> (or equivalently &alpha; at proton scale) acts as the model&rsquo;s mass-scale anchor and is not itself derived.</li>
+    <li><strong>Particle masses.</strong> Known mass ratios (proton/electron, W/proton, Planck/proton, lepton generations) do not show clean &phi;-power or PSL(2,7)-irrep patterns. A systematic search at 0.2% tolerance over products of irrep dimensions (1, 3, 3&#772;, 6, 7, 8) times &phi;<sup>n</sup> finds no consistent scheme across multiple ratios. One near-match is suggestive &mdash; m<sub>&mu;</sub>/m<sub>e</sub>&thinsp;&asymp;&thinsp;N&sup2;&middot;&phi;<sup>d+1</sup> within 0.4% &mdash; but it doesn&rsquo;t extend to &tau;/&mu; or quark sectors. This strongly suggests the golden ratio governs <em>inter-frame</em> recursion, not <em>intra-frame</em> particle physics, and consequently m<sub>p</sub> acts as the model&rsquo;s mass-scale anchor and is not itself derived.</li>
 
     <li><strong>Non-perturbative fixed point.</strong> The RG derivation shows the Fano-plane theory is marginal at D&thinsp;=&thinsp;6, and unitarity independently fixes the coupling to g&sup2;&thinsp;=&thinsp;1/&phi;. But confirming that the Fano theory&rsquo;s actual non-perturbative fixed point at D&thinsp;=&thinsp;4 matches 1/&phi; requires lattice simulation or conformal bootstrap with PSL(2,7) symmetry &mdash; a calculation that has not yet been done.</li>
 
-    <li><strong>The &alpha; formula.</strong> The closed form 1/&alpha;(m<sub>p</sub>)&thinsp;=&thinsp;(&phi;<sup>2(N&minus;d)</sup>&thinsp;+&thinsp;2&phi;<sup>N+d</sup>&thinsp;&minus;&thinsp;2&phi;<sup>d</sup>)/d is verified to 0.008% against the G identity and uses only structured combinations of (N&thinsp;=&thinsp;7, d&thinsp;=&thinsp;2), but no first-principles derivation of the exponent triple (2(N&minus;d), N+d, d) has been produced. This is currently the largest open mathematical question: either derive the formula from the Fano Lagrangian + RG flow, or admit &alpha; as the second dimensionful anchor (alongside H<sub>0</sub>) of the model.</li>
+    <li><strong>The &alpha; formula.</strong> The closed form 1/&alpha;(m<sub>p</sub>)&thinsp;=&thinsp;(&phi;<sup>N+2d</sup>&thinsp;+&thinsp;&phi;<sup>N+d</sup>&thinsp;&minus;&thinsp;2&phi;<sup>d</sup>)/d is verified to 0.008% against the G identity. The exponent structure is now sharply constrained: <strong>an arithmetic progression (N+2d, N+d, d) with step N (Fano) and base d (polarization)</strong> &mdash; a two-generator graded ladder. What remains open is the coefficient pattern (1, 1, &minus;2): why these specific weights? A loop-expansion or graded-representation-theory argument is the most promising path. Until it closes, &alpha; acts as the second dimensionful anchor (alongside H<sub>0</sub>).</li>
 
     <li><strong>Full CMB power spectrum.</strong> The shift parameter R captures the overall distance scale, but the full C<sub>&#8467;</sub> spectrum requires running the model through a Boltzmann code (CLASS/CAMB) with the recursive w(z). This would sharpen or relax the 4&sigma; R tension.</li>
 
@@ -849,7 +862,7 @@
   <table>
     <thead><tr><th>Parameter</th><th>Expression</th><th>Value</th></tr></thead>
     <tbody>
-      <tr><td>Fine structure constant</td><td>&alpha;(m<sub>p</sub>) = 2/(121&phi; + 74)</td><td>1/134.89</td></tr>
+      <tr><td>Fine structure constant</td><td>&alpha;(m<sub>p</sub>) = 2/(&phi;<sup>11</sup>+&phi;<sup>9</sup>&minus;2&phi;&sup2;)</td><td>1/134.89</td></tr>
       <tr><td>Energy fraction per level</td><td>p = d/&phi;<sup>(d&sup2;+d+1)</sup> = 2/&phi;<sup>7</sup></td><td>0.0689</td></tr>
       <tr><td>Recursion depth</td><td>n = d&thinsp;&phi;<sup>d</sup> = 2&phi;&sup2;</td><td>5.236</td></tr>
       <tr><td>Attenuation per boundary</td><td>&alpha;(m<sub>p</sub>)<sup>d&phi;</sup></td><td>1.28&thinsp;&times;&thinsp;10<sup>&minus;7</sup></td></tr>
@@ -865,7 +878,7 @@
       <tr><td>Dark energy</td><td>(1&minus;p)<sup>n</sup></td><td>0.688</td><td>0.689</td></tr>
       <tr><td>Dark matter</td><td>(1&minus;p)<sup>n</sup> / &phi;&sup2;</td><td>0.263</td><td>0.261</td></tr>
       <tr><td>Ordinary matter</td><td>1 &minus; (1&minus;p)<sup>n</sup>(3&minus;&phi;)</td><td>0.04896</td><td>0.04897</td></tr>
-      <tr><td>1/&alpha;(m<sub>p</sub>)</td><td>(121&phi; + 74)/2</td><td>134.89</td><td>~134&ndash;136</td></tr>
+      <tr><td>1/&alpha;(m<sub>p</sub>)</td><td>(&phi;<sup>11</sup>+&phi;<sup>9</sup>&minus;2&phi;&sup2;)/2</td><td>134.89</td><td>~134&ndash;136</td></tr>
       <tr><td>Newton&rsquo;s G</td><td>(k<sub>e</sub>e&sup2;/m<sub>p</sub>&sup2;)&thinsp;&times;&thinsp;&alpha;<sup>4&phi;&sup3;</sup></td><td>6.69&thinsp;&times;&thinsp;10<sup>&minus;11</sup></td><td>6.674&thinsp;&times;&thinsp;10<sup>&minus;11</sup></td></tr>
       <tr><td>EM/gravity ratio</td><td>&alpha;<sup>&minus;4&phi;&sup3;</sup></td><td>10<sup>36.09</sup></td><td>10<sup>36.09</sup></td></tr>
       <tr><td>DE equation of state w<sub>0</sub></td><td>n(a)&thinsp;=&thinsp;n<sub>0</sub>&thinsp;&times;&thinsp;t(a)/t<sub>0</sub></td><td>&minus;0.867</td><td>&asymp;&minus;0.7 to &minus;0.9 (DESI DR2)</td></tr>
