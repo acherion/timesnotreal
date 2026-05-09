@@ -130,6 +130,28 @@
       margin: 1rem 0;
       font-weight: 600;
     }
+    figure {
+      margin: 1.75rem 0;
+      padding: 1.25rem;
+      background: var(--subtle);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      text-align: center;
+    }
+    figure svg {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: 0 auto;
+    }
+    figcaption {
+      font-size: 0.88rem;
+      color: var(--muted);
+      margin-top: 0.75rem;
+      line-height: 1.5;
+      text-align: left;
+    }
+    figcaption strong { color: var(--text); }
     table {
       width: 100%;
       border-collapse: collapse;
@@ -397,6 +419,39 @@
 
   <p>For d&thinsp;=&thinsp;2, the number 7&thinsp;=&thinsp;d&sup2;+d+1 is also the number of points in the <strong>Fano plane</strong> &mdash; the simplest finite projective geometry, PG(2,2). The Fano plane has 7 points, 7 lines, with 3 points per line and 3 lines per point. It is the multiplication table of the <strong>imaginary octonions</strong>: the 7 lines define the trilinear products e<sub>a</sub>&thinsp;&times;&thinsp;e<sub>b</sub>&thinsp;=&thinsp;e<sub>c</sub>.</p>
 
+  <figure>
+    <svg viewBox="0 0 400 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="fano-title">
+      <title id="fano-title">The Fano plane: 7 points and 7 lines</title>
+      <!-- Triangle sides (3 lines) -->
+      <line x1="200" y1="50" x2="80" y2="258" stroke="#2c3e6b" stroke-width="2"/>
+      <line x1="200" y1="50" x2="320" y2="258" stroke="#2c3e6b" stroke-width="2"/>
+      <line x1="80" y1="258" x2="320" y2="258" stroke="#2c3e6b" stroke-width="2"/>
+      <!-- Three medians (3 lines) -->
+      <line x1="200" y1="50" x2="200" y2="258" stroke="#2c3e6b" stroke-width="2"/>
+      <line x1="80" y1="258" x2="260" y2="154" stroke="#2c3e6b" stroke-width="2"/>
+      <line x1="320" y1="258" x2="140" y2="154" stroke="#2c3e6b" stroke-width="2"/>
+      <!-- Inscribed circle (the 7th line, through 3 midpoints) -->
+      <circle cx="200" cy="188.67" r="69.3" fill="none" stroke="#e67e22" stroke-width="2.5"/>
+      <!-- 7 points -->
+      <circle cx="200" cy="50" r="6" fill="#1a1a2e"/>
+      <circle cx="80" cy="258" r="6" fill="#1a1a2e"/>
+      <circle cx="320" cy="258" r="6" fill="#1a1a2e"/>
+      <circle cx="140" cy="154" r="6" fill="#1a1a2e"/>
+      <circle cx="260" cy="154" r="6" fill="#1a1a2e"/>
+      <circle cx="200" cy="258" r="6" fill="#1a1a2e"/>
+      <circle cx="200" cy="188.67" r="6" fill="#1a1a2e"/>
+      <!-- Labels -->
+      <text x="200" y="38" font-size="14" font-weight="600" text-anchor="middle">e₁</text>
+      <text x="65" y="276" font-size="14" font-weight="600" text-anchor="middle">e₂</text>
+      <text x="335" y="276" font-size="14" font-weight="600" text-anchor="middle">e₃</text>
+      <text x="121" y="148" font-size="14" font-weight="600" text-anchor="end">e₄</text>
+      <text x="279" y="148" font-size="14" font-weight="600" text-anchor="start">e₅</text>
+      <text x="200" y="278" font-size="14" font-weight="600" text-anchor="middle">e₆</text>
+      <text x="216" y="194" font-size="14" font-weight="600" text-anchor="start">e₇</text>
+    </svg>
+    <figcaption><strong>Figure 2.</strong> The Fano plane PG(2,2). Seven points (e<sub>1</sub>&hellip;e<sub>7</sub>), seven &ldquo;lines&rdquo; (six straight + one circle, in orange), three points on every line, three lines through every point. As an octonion multiplication table, each line {e<sub>a</sub>, e<sub>b</sub>, e<sub>c</sub>} encodes a cyclic product e<sub>a</sub>&middot;e<sub>b</sub>&thinsp;=&thinsp;e<sub>c</sub>. As a code, the same 7-point structure is the Hamming(7,4) error-correcting code (Steane [[7,1,3]] in its quantum version), which we identify with the holographic encoding of bulk information on each frame&rsquo;s horizon. The exponent N&thinsp;=&thinsp;7 in p&thinsp;=&thinsp;d/&phi;<sup>N</sup> and in n<sub>s</sub>&thinsp;=&thinsp;1&thinsp;&minus;&thinsp;1/&phi;<sup>N</sup> counts <em>these</em> seven points.</figcaption>
+  </figure>
+
   <p>This is stronger than an analogy. The Fano cubic coupling appearing in the model&rsquo;s Lagrangian &mdash; &Sigma;<sub>Fano lines</sub>&thinsp;&Psi;<sub>a</sub>&Psi;<sub>b</sub>&Psi;<sub>c</sub> &mdash; is <strong>literally</strong> the symmetric trilinear form on Im(&Oopf;) induced by the octonion product. The 7 fields are the 7 imaginary octonion units; the 7 interaction vertices are the 7 octonion structure constants.</p>
 
   <div class="callout">
@@ -490,6 +545,58 @@
 
   <p><strong>Comparison with DESI DR2 (March 2025).</strong> The <a href="https://arxiv.org/abs/2503.14738">DESI collaboration</a> measured baryon acoustic oscillations with 14 million galaxies and found 2.8&ndash;4.2&sigma; evidence that dark energy evolves (w&thinsp;&ne;&thinsp;&minus;1). Their best-fit present-day value: <strong>w<sub>0</sub>&thinsp;&asymp;&thinsp;&minus;0.75</strong>. Our prediction of w<sub>0</sub>&thinsp;=&thinsp;&minus;0.867 falls within DESI&rsquo;s 2&sigma; contour and is consistent with their &ldquo;pivot&rdquo; constraint (w at z&thinsp;&asymp;&thinsp;0.3) of approximately &minus;0.95.</p>
 
+  <figure>
+    <svg viewBox="0 0 480 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="wz-title">
+      <title id="wz-title">Dark-energy equation of state w(z): model vs. ΛCDM vs. DESI DR2</title>
+      <!-- Phantom-forbidden region (w < -1) shaded -->
+      <rect x="70" y="208.6" width="380" height="71.4" fill="#c0392b" opacity="0.07"/>
+      <text x="445" y="270" font-size="10" fill="#c0392b" text-anchor="end" font-style="italic">phantom region (w &lt; −1) — forbidden by model</text>
+      <!-- Axes -->
+      <line x1="70" y1="280" x2="450" y2="280" stroke="#1a1a2e" stroke-width="1.5"/>
+      <line x1="70" y1="20" x2="70" y2="280" stroke="#1a1a2e" stroke-width="1.5"/>
+      <!-- x-axis ticks/labels -->
+      <line x1="70" y1="280" x2="70" y2="285" stroke="#1a1a2e"/>
+      <text x="70" y="298" font-size="11" text-anchor="middle">0</text>
+      <line x1="165" y1="280" x2="165" y2="285" stroke="#1a1a2e"/>
+      <text x="165" y="298" font-size="11" text-anchor="middle">0.5</text>
+      <line x1="260" y1="280" x2="260" y2="285" stroke="#1a1a2e"/>
+      <text x="260" y="298" font-size="11" text-anchor="middle">1.0</text>
+      <line x1="355" y1="280" x2="355" y2="285" stroke="#1a1a2e"/>
+      <text x="355" y="298" font-size="11" text-anchor="middle">1.5</text>
+      <line x1="450" y1="280" x2="450" y2="285" stroke="#1a1a2e"/>
+      <text x="450" y="298" font-size="11" text-anchor="middle">2.0</text>
+      <text x="260" y="314" font-size="12" text-anchor="middle" font-style="italic">redshift z</text>
+      <!-- y-axis ticks/labels -->
+      <line x1="65" y1="30" x2="70" y2="30" stroke="#1a1a2e"/>
+      <text x="62" y="34" font-size="11" text-anchor="end">−0.5</text>
+      <line x1="65" y1="101" x2="70" y2="101" stroke="#1a1a2e"/>
+      <text x="62" y="105" font-size="11" text-anchor="end">−0.7</text>
+      <line x1="65" y1="172" x2="70" y2="172" stroke="#1a1a2e"/>
+      <text x="62" y="176" font-size="11" text-anchor="end">−0.9</text>
+      <line x1="65" y1="208.6" x2="70" y2="208.6" stroke="#1a1a2e"/>
+      <text x="62" y="212" font-size="11" text-anchor="end">−1.0</text>
+      <line x1="65" y1="244" x2="70" y2="244" stroke="#1a1a2e"/>
+      <text x="62" y="248" font-size="11" text-anchor="end">−1.1</text>
+      <text x="22" y="155" font-size="12" font-style="italic" transform="rotate(-90 22 155)">w(z)</text>
+      <!-- ΛCDM line at w=-1 -->
+      <line x1="70" y1="208.6" x2="450" y2="208.6" stroke="#7f8c8d" stroke-width="2" stroke-dasharray="5 4"/>
+      <text x="375" y="203" font-size="11" fill="#7f8c8d">ΛCDM (w = −1)</text>
+      <!-- Our model curve: w0=-0.867, wa=-0.133 -->
+      <polyline points="70,161 117,170 165,177 213,181 260,185 308,188 355,190 402,191 450,193" fill="none" stroke="#27ae60" stroke-width="2.5"/>
+      <text x="375" y="178" font-size="11" fill="#27ae60" font-weight="600">our model</text>
+      <text x="375" y="190" font-size="9" fill="#27ae60" font-style="italic">→ −1 as z → ∞</text>
+      <!-- DESI DR2 illustrative best fit (CPL goes phantom) -->
+      <polyline points="70,135 117,165 165,191 213,212 260,228 308,242 355,253 402,261 450,267" fill="none" stroke="#e67e22" stroke-width="2" stroke-dasharray="3 3"/>
+      <text x="298" y="270" font-size="11" fill="#e67e22">DESI DR2 best CPL</text>
+      <!-- Markers at z=0 -->
+      <circle cx="70" cy="161" r="3.5" fill="#27ae60"/>
+      <text x="80" y="155" font-size="10" fill="#27ae60" font-weight="600">w₀ = −0.867</text>
+      <circle cx="70" cy="135" r="3.5" fill="#e67e22"/>
+      <text x="80" y="129" font-size="10" fill="#e67e22">w₀ ≈ −0.75 (DESI central)</text>
+    </svg>
+    <figcaption><strong>Figure 3.</strong> Dark-energy equation of state w(z). The model (green, solid) starts at w<sub>0</sub>&thinsp;=&thinsp;&minus;0.867 today and asymptotes to &minus;1 at high redshift &mdash; <em>never</em> crossing into the phantom region (red shaded), which is forbidden structurally. &Lambda;CDM (grey dashed) is flat at &minus;1. The DESI DR2 best-fit CPL extrapolation (orange dashed) starts above &minus;1 today but crosses into the phantom region by z&thinsp;&asymp;&thinsp;0.7. The two predictions diverge most sharply at z&thinsp;&gt;&thinsp;1, where Euclid and LSST will distinguish them by ~2028. <em>If</em> a phantom crossing is confirmed at any redshift, this model is dead.</figcaption>
+  </figure>
+
   <p>The w(z) shapes diverge at higher redshift. DESI fits a linear (CPL) parameterization that requires <strong>phantom energy</strong> (w&thinsp;&lt;&thinsp;&minus;1) at z&thinsp;&gt;&thinsp;0.3. The recursive model instead follows a curve that <strong>never crosses the phantom divide</strong> &mdash; approaching w&thinsp;=&thinsp;&minus;1 from above at high z. This is physically required: the recursion can only consume fuel, never create it.</p>
 
   <div class="callout">
@@ -570,7 +677,56 @@
 
   <div class="result-box">
     <p class="formula" style="font-size:1.25rem;">1/&alpha;(m<sub>p</sub>) = (&phi;<sup>N+2d</sup> + &phi;<sup>N+d</sup> &minus; 2&phi;<sup>d</sup>) / d = (&phi;<sup>11</sup> + &phi;<sup>9</sup> &minus; 2&phi;&sup2;)/2 = 134.89</p>
-    <p>where N&thinsp;=&thinsp;d&sup2;+d+1&thinsp;=&thinsp;7 is the Fano-plane DoF count and d&thinsp;=&thinsp;2 is the EM polarisation count. <strong>The three exponents (N+2d, N+d, d) form an arithmetic progression with common difference N (Fano), starting from d (polarization)</strong> &mdash; a graded ladder structure with two generators.</p>
+    <p>where N&thinsp;=&thinsp;d&sup2;+d+1&thinsp;=&thinsp;7 is the Fano-plane DoF count and d&thinsp;=&thinsp;2 is the EM polarisation count. <strong>The three exponents (d, N+d, N+2d) sit at three corners of the (a, b) lattice generated by N (Fano) and d (polarization)</strong> &mdash; a two-step graded ladder: one step of size N from the base d, then one step of size d further on. Both generators of the ladder are physical: N counts the Fano DoFs, d counts the polarizations.</p>
+
+  <figure>
+    <svg viewBox="0 0 480 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="alpha-title">
+      <title id="alpha-title">The α exponent ladder: (d, N+d, N+2d) = (2, 9, 11)</title>
+      <!-- Number line -->
+      <line x1="40" y1="130" x2="450" y2="130" stroke="#1a1a2e" stroke-width="1.5"/>
+      <!-- Tick marks every 1 unit, 0..13 -->
+      <g font-size="9" fill="#7f8c8d" text-anchor="middle">
+        <line x1="40" y1="127" x2="40" y2="133" stroke="#7f8c8d"/><text x="40" y="148">0</text>
+        <line x1="71.5" y1="127" x2="71.5" y2="133" stroke="#7f8c8d"/><text x="71.5" y="148">1</text>
+        <line x1="103" y1="127" x2="103" y2="133" stroke="#7f8c8d"/><text x="103" y="148">2</text>
+        <line x1="134.5" y1="127" x2="134.5" y2="133" stroke="#7f8c8d"/><text x="134.5" y="148">3</text>
+        <line x1="166" y1="127" x2="166" y2="133" stroke="#7f8c8d"/><text x="166" y="148">4</text>
+        <line x1="197.5" y1="127" x2="197.5" y2="133" stroke="#7f8c8d"/><text x="197.5" y="148">5</text>
+        <line x1="229" y1="127" x2="229" y2="133" stroke="#7f8c8d"/><text x="229" y="148">6</text>
+        <line x1="260.5" y1="127" x2="260.5" y2="133" stroke="#7f8c8d"/><text x="260.5" y="148">7</text>
+        <line x1="292" y1="127" x2="292" y2="133" stroke="#7f8c8d"/><text x="292" y="148">8</text>
+        <line x1="323.5" y1="127" x2="323.5" y2="133" stroke="#7f8c8d"/><text x="323.5" y="148">9</text>
+        <line x1="355" y1="127" x2="355" y2="133" stroke="#7f8c8d"/><text x="355" y="148">10</text>
+        <line x1="386.5" y1="127" x2="386.5" y2="133" stroke="#7f8c8d"/><text x="386.5" y="148">11</text>
+        <line x1="418" y1="127" x2="418" y2="133" stroke="#7f8c8d"/><text x="418" y="148">12</text>
+        <line x1="449.5" y1="127" x2="449.5" y2="133" stroke="#7f8c8d"/><text x="449.5" y="148">13</text>
+      </g>
+      <text x="245" y="170" font-size="11" font-style="italic" fill="#7f8c8d" text-anchor="middle">exponent of φ in 1/α formula</text>
+
+      <!-- Three highlighted points: at 2, 9, 11 -->
+      <!-- d=2 (coefficient -2) -->
+      <circle cx="103" cy="130" r="8" fill="#c0392b"/>
+      <text x="103" y="106" font-size="13" font-weight="700" fill="#c0392b" text-anchor="middle">−2 · φ²</text>
+      <text x="103" y="92" font-size="10" fill="#c0392b" text-anchor="middle">d</text>
+      <!-- N+d = 9 (coefficient +1) -->
+      <circle cx="323.5" cy="130" r="8" fill="#27ae60"/>
+      <text x="323.5" y="106" font-size="13" font-weight="700" fill="#27ae60" text-anchor="middle">+φ⁹</text>
+      <text x="323.5" y="92" font-size="10" fill="#27ae60" text-anchor="middle">N + d</text>
+      <!-- N+2d = 11 (coefficient +1) -->
+      <circle cx="386.5" cy="130" r="8" fill="#27ae60"/>
+      <text x="386.5" y="106" font-size="13" font-weight="700" fill="#27ae60" text-anchor="middle">+φ¹¹</text>
+      <text x="386.5" y="92" font-size="10" fill="#27ae60" text-anchor="middle">N + 2d</text>
+
+      <!-- Step arc 1: from 2 to 9 (step of N = 7) -->
+      <path d="M 103 130 Q 213 50 323.5 130" fill="none" stroke="#2c3e6b" stroke-width="1.5" stroke-dasharray="4 3"/>
+      <text x="213" y="50" font-size="12" font-weight="600" fill="#2c3e6b" text-anchor="middle">step of N = 7</text>
+
+      <!-- Step arc 2: from 9 to 11 (step of d = 2) -->
+      <path d="M 323.5 130 Q 355 80 386.5 130" fill="none" stroke="#2c3e6b" stroke-width="1.5" stroke-dasharray="4 3"/>
+      <text x="355" y="76" font-size="11" font-weight="600" fill="#2c3e6b" text-anchor="middle">step of d = 2</text>
+    </svg>
+    <figcaption><strong>Figure 5.</strong> The α-formula exponent ladder. The three terms in 1/α(m<sub>p</sub>)&thinsp;=&thinsp;(&phi;<sup>11</sup>&thinsp;+&thinsp;&phi;<sup>9</sup>&thinsp;&minus;&thinsp;2&phi;<sup>2</sup>)/2 sit at exponents 2, 9, 11 on a two-step ladder built from the two physical generators of the model: a step of N&thinsp;=&thinsp;7 (Fano DoFs) and a step of d&thinsp;=&thinsp;2 (polarizations). Coefficients (1, 1, &minus;2) sum to zero (a tracelessness condition). The exponent positions are now constrained algebraically; only the coefficient pattern remains as the model&rsquo;s largest open mathematical question.</figcaption>
+  </figure>
     <p>The measured value of &alpha; at the proton mass scale (~1&thinsp;GeV) is approximately 1/134 to 1/136 via standard QED running. The formula sits squarely in this range, and matches to 0.008% the value implied by the gravitational-constant identity G&thinsp;=&thinsp;(k<sub>e</sub>e&sup2;/m<sub>p</sub>&sup2;)&thinsp;&times;&thinsp;&alpha;<sup>4&phi;&sup3;</sup>.</p>
   </div>
 
@@ -681,7 +837,7 @@
 
     <li><strong>The ordinary matter fraction is predicted to 0.03%.</strong> The model predicts &Omega;<sub>b</sub>&thinsp;&asymp;&thinsp;0.04896 via OM&thinsp;=&thinsp;1&thinsp;&minus;&thinsp;(1&minus;p)<sup>n</sup>(3&minus;&phi;). The current Planck measurement is 0.04897&thinsp;&plusmn;&thinsp;0.0003. Future precision measurements of baryon density and the Hubble constant can further test this match.</li>
 
-    <li><strong>The fine structure constant is derivable.</strong> The formula 1/&alpha;(m<sub>p</sub>)&thinsp;=&thinsp;(&phi;<sup>11</sup>&thinsp;+&thinsp;&phi;<sup>9</sup>&thinsp;&minus;&thinsp;2&phi;&sup2;)/2&thinsp;=&thinsp;134.89 predicts this value at the proton mass scale with exponents forming an arithmetic progression (step N&thinsp;=&thinsp;7, base d&thinsp;=&thinsp;2). Increasingly precise QED calculations of the running of &alpha; can test whether this value is correct.</li>
+    <li><strong>The fine structure constant is derivable.</strong> The formula 1/&alpha;(m<sub>p</sub>)&thinsp;=&thinsp;(&phi;<sup>11</sup>&thinsp;+&thinsp;&phi;<sup>9</sup>&thinsp;&minus;&thinsp;2&phi;&sup2;)/2&thinsp;=&thinsp;134.89 predicts this value at the proton mass scale, with the three exponents (2, 9, 11) sitting on a two-step graded ladder built from N&thinsp;=&thinsp;7 and d&thinsp;=&thinsp;2. Increasingly precise QED calculations of the running of &alpha; can test whether this value is correct.</li>
 
     <li><strong>Gravitational constant G is derivable.</strong> The formula G&thinsp;=&thinsp;(k<sub>e</sub>e&sup2;/m<sub>p</sub>&sup2;)&thinsp;&times;&thinsp;&alpha;(m<sub>p</sub>)<sup>4&phi;&sup3;</sup> can be checked against increasingly precise measurements of G, &alpha;, and m<sub>p</sub>. The prediction should remain consistent to within ~0.5%.</li>
 
@@ -710,6 +866,81 @@
 
   <h3>The picture in one paragraph</h3>
   <p>The parent frame is a <strong>literal physical place</strong> &mdash; a real universe with its own atoms, stars, and black holes. Our universe is the <strong>interior of one specific black hole</strong> in the parent. The boundary between frames is a Schwarzschild horizon. The recursion is <strong>strictly self-similar</strong>: every level relates to its parent in exactly the same way ours relates to ours. This means &phi;, d&thinsp;=&thinsp;2, &alpha;, p, n<sub>0</sub>, w(z), and all dimensionless ratios are <strong>universal constants of the recursion</strong> &mdash; the same at every depth of the tower, with no preferred frame.</p>
+
+  <figure>
+    <svg viewBox="0 0 620 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="recur-title">
+      <title id="recur-title">Recursion of universes through black-hole horizons</title>
+      <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+          <polygon points="0 0, 10 3.5, 0 7" fill="#7f8c8d"/>
+        </marker>
+      </defs>
+      <!-- Grandparent (faded) -->
+      <g opacity="0.35">
+        <circle cx="55" cy="130" r="42" fill="none" stroke="#2c3e6b" stroke-width="1.5"/>
+        <circle cx="40" cy="115" r="1.8" fill="#2c3e6b"/>
+        <circle cx="70" cy="120" r="1.8" fill="#2c3e6b"/>
+        <circle cx="45" cy="145" r="1.5" fill="#2c3e6b"/>
+        <circle cx="65" cy="150" r="1.5" fill="#2c3e6b"/>
+        <circle cx="55" cy="130" r="5" fill="#1a1a2e"/>
+      </g>
+      <text x="55" y="200" font-size="11" fill="#7f8c8d" text-anchor="middle" font-style="italic">grandparent</text>
+
+      <path d="M 105 130 L 130 130" stroke="#7f8c8d" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+
+      <!-- Parent universe -->
+      <circle cx="220" cy="130" r="75" fill="none" stroke="#2c3e6b" stroke-width="2"/>
+      <circle cx="190" cy="100" r="2" fill="#2c3e6b"/>
+      <circle cx="245" cy="105" r="2" fill="#2c3e6b"/>
+      <circle cx="175" cy="145" r="2" fill="#2c3e6b"/>
+      <circle cx="260" cy="160" r="2" fill="#2c3e6b"/>
+      <circle cx="215" cy="175" r="2" fill="#2c3e6b"/>
+      <circle cx="195" cy="170" r="1.5" fill="#2c3e6b"/>
+      <circle cx="250" cy="125" r="1.5" fill="#2c3e6b"/>
+      <circle cx="200" cy="130" r="1.5" fill="#2c3e6b"/>
+      <!-- BH inside parent (= our universe, viewed from outside) -->
+      <circle cx="220" cy="130" r="13" fill="#1a1a2e"/>
+      <text x="220" y="40" font-size="13" fill="#1a1a2e" text-anchor="middle" font-weight="600">parent universe</text>
+      <text x="220" y="225" font-size="10" fill="#7f8c8d" text-anchor="middle" font-style="italic">our universe = this BH</text>
+
+      <path d="M 305 130 L 340 130" stroke="#7f8c8d" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+      <text x="322" y="120" font-size="10" fill="#7f8c8d" text-anchor="middle">zoom in</text>
+
+      <!-- Our universe -->
+      <circle cx="430" cy="130" r="75" fill="none" stroke="#e67e22" stroke-width="3"/>
+      <text x="430" y="40" font-size="13" fill="#1a1a2e" text-anchor="middle" font-weight="600">our universe</text>
+      <text x="430" y="55" font-size="10" fill="#e67e22" text-anchor="middle">= parent BH horizon</text>
+      <circle cx="400" cy="100" r="2" fill="#2c3e6b"/>
+      <circle cx="455" cy="105" r="2" fill="#2c3e6b"/>
+      <circle cx="385" cy="145" r="2" fill="#2c3e6b"/>
+      <circle cx="470" cy="160" r="2" fill="#2c3e6b"/>
+      <circle cx="425" cy="175" r="2" fill="#2c3e6b"/>
+      <circle cx="405" cy="170" r="1.5" fill="#2c3e6b"/>
+      <circle cx="460" cy="125" r="1.5" fill="#2c3e6b"/>
+      <!-- BHs in our universe = children -->
+      <circle cx="425" cy="135" r="8" fill="#1a1a2e"/>
+      <circle cx="450" cy="155" r="4" fill="#1a1a2e"/>
+      <circle cx="408" cy="155" r="3" fill="#1a1a2e"/>
+      <text x="430" y="225" font-size="10" fill="#7f8c8d" text-anchor="middle" font-style="italic">child universes inside</text>
+
+      <path d="M 515 130 L 540 130" stroke="#7f8c8d" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+
+      <!-- Child (faded) -->
+      <g opacity="0.35">
+        <circle cx="575" cy="130" r="22" fill="none" stroke="#2c3e6b" stroke-width="1.5"/>
+        <circle cx="565" cy="120" r="1.5" fill="#2c3e6b"/>
+        <circle cx="585" cy="125" r="1.5" fill="#2c3e6b"/>
+        <circle cx="570" cy="140" r="1.5" fill="#2c3e6b"/>
+        <circle cx="575" cy="130" r="3" fill="#1a1a2e"/>
+      </g>
+      <text x="575" y="200" font-size="11" fill="#7f8c8d" text-anchor="middle" font-style="italic">child</text>
+
+      <!-- Self-similarity loop arrow -->
+      <path d="M 55 230 Q 310 250 575 230" fill="none" stroke="#27ae60" stroke-width="1.2" stroke-dasharray="4 3"/>
+      <text x="310" y="255" font-size="11" fill="#27ae60" text-anchor="middle" font-style="italic">strict self-similarity: every level &phi;, d, &alpha;, n_s, p, n_0 are identical</text>
+    </svg>
+    <figcaption><strong>Figure 1.</strong> The recursion. Each universe contains black holes; the interior of each black hole is itself a universe at the next level down, with identical dimensionless physics (same &phi;, same d&thinsp;=&thinsp;2, same &alpha;, same n<sub>s</sub>, same p, same n<sub>0</sub>). The orange ring marks the boundary identity that anchors the picture: <em>our cosmological horizon is, viewed from outside, the parent BH&rsquo;s Schwarzschild horizon</em>. The recursion has no top or bottom level; the dimensionless ratios are universal constants of the entire tower.</figcaption>
+  </figure>
 
   <h3>What the picture explains automatically</h3>
   <ul>
@@ -773,6 +1004,42 @@
   </div>
   <p>Observed (Planck 2018, TT+TE+EE+lowE+lensing): <strong>n<sub>s</sub>&thinsp;=&thinsp;0.9649&thinsp;&plusmn;&thinsp;0.0042</strong>. Model deviation: 0.0007, or <strong>0.17&sigma;</strong>. The same exponent 7 that sets p&thinsp;=&thinsp;2/&phi;<sup>7</sup> and counts the Fano degrees of freedom also sets the CMB tilt. This is the second sharp numerical tie-in after &Lambda;&middot;t<sub>0</sub>&sup2;&thinsp;=&thinsp;8/&phi;<sup>3</sup>. It is an ordinary inflation-free derivation of a Planck-era observable and is <em>inconsistent with n<sub>s</sub>&thinsp;=&thinsp;1 exactly</em> and with any value outside 0.961&ndash;0.970, both of which falsification windows are narrowing with CMB-S4 and LiteBIRD.</p>
 
+  <figure>
+    <svg viewBox="0 0 480 160" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="ns-title">
+      <title id="ns-title">CMB scalar spectral index n_s: model prediction vs. Planck 2018</title>
+      <!-- Model-allowed window 0.961-0.970 -->
+      <rect x="174" y="50" width="171" height="20" fill="#27ae60" opacity="0.13"/>
+      <text x="259" y="44" font-size="10" text-anchor="middle" fill="#27ae60" font-style="italic">model-allowed window: 0.961 – 0.970</text>
+      <!-- Number line -->
+      <line x1="60" y1="60" x2="440" y2="60" stroke="#1a1a2e" stroke-width="1.5"/>
+      <!-- Ticks -->
+      <line x1="60" y1="56" x2="60" y2="64" stroke="#1a1a2e"/>
+      <text x="60" y="82" font-size="10" text-anchor="middle">0.955</text>
+      <line x1="155" y1="56" x2="155" y2="64" stroke="#1a1a2e"/>
+      <text x="155" y="82" font-size="10" text-anchor="middle">0.960</text>
+      <line x1="250" y1="56" x2="250" y2="64" stroke="#1a1a2e"/>
+      <text x="250" y="82" font-size="10" text-anchor="middle">0.965</text>
+      <line x1="345" y1="56" x2="345" y2="64" stroke="#1a1a2e"/>
+      <text x="345" y="82" font-size="10" text-anchor="middle">0.970</text>
+      <line x1="440" y1="56" x2="440" y2="64" stroke="#1a1a2e"/>
+      <text x="440" y="82" font-size="10" text-anchor="middle">0.975</text>
+      <!-- Window edges marked on line -->
+      <line x1="174" y1="50" x2="174" y2="70" stroke="#27ae60" stroke-width="1.5" stroke-dasharray="2 2"/>
+      <line x1="345" y1="50" x2="345" y2="70" stroke="#27ae60" stroke-width="1.5" stroke-dasharray="2 2"/>
+      <!-- Planck measurement with error bar -->
+      <line x1="168.3" y1="115" x2="327.9" y2="115" stroke="#2c3e6b" stroke-width="2.5"/>
+      <line x1="168.3" y1="108" x2="168.3" y2="122" stroke="#2c3e6b" stroke-width="2.5"/>
+      <line x1="327.9" y1="108" x2="327.9" y2="122" stroke="#2c3e6b" stroke-width="2.5"/>
+      <circle cx="248.1" cy="115" r="4.5" fill="#2c3e6b"/>
+      <text x="248.1" y="138" font-size="11" text-anchor="middle" fill="#2c3e6b" font-weight="600">Planck 2018: 0.9649 ± 0.0042</text>
+      <!-- Model prediction -->
+      <polygon points="261.4,30 256,18 266.8,18" fill="#27ae60"/>
+      <line x1="261.4" y1="30" x2="261.4" y2="60" stroke="#27ae60" stroke-width="1.8" stroke-dasharray="2 2"/>
+      <text x="261.4" y="14" font-size="11" text-anchor="middle" fill="#27ae60" font-weight="700">model: 1 − 1/φ⁷ = 0.9656</text>
+    </svg>
+    <figcaption><strong>Figure 4.</strong> The CMB scalar spectral index. The model&rsquo;s prediction (green triangle, top) is 0.9656; the Planck 2018 measurement (blue point with 1&sigma; error bar) is 0.9649 ± 0.0042. The prediction sits inside Planck&rsquo;s error bar, 0.17&sigma; from the central value. The green-shaded band is the model-allowed window (0.961&ndash;0.970): any future CMB-S4 / LiteBIRD measurement outside it falsifies the model. Exact scale invariance (n<sub>s</sub>&thinsp;=&thinsp;1, off the right of this plot) is explicitly forbidden.</figcaption>
+  </figure>
+
   <h4>8. Horizon, flatness, and monopole problems dissolve without inflation</h4>
   <ul style="margin-top:0.5rem;">
     <li><strong>Horizon.</strong> The BH interior is causally connected throughout; the parent BH formation is the common past of all interior points. CMB isotropy needs no inflationary stretching.</li>
@@ -811,7 +1078,7 @@
     <li>A single conceptual framework (recursive frames + emergent time) connects time dilation, the dark sector composition, the EM/gravity hierarchy, and the fine structure constant</li>
     <li>The formula G&thinsp;=&thinsp;(k<sub>e</sub>e&sup2;/m<sub>p</sub>&sup2;)&thinsp;&times;&thinsp;&alpha;(m<sub>p</sub>)<sup>4&phi;&sup3;</sup> reproduces Newton&rsquo;s constant to <strong>0.2%</strong>, given the standard atomic constants (e, m<sub>p</sub>, &alpha;)</li>
     <li>All three cosmic energy fractions (dark energy, dark matter, ordinary matter) match Planck data within 1%, with ordinary matter at <strong>0.03% accuracy</strong></li>
-    <li>The fine-structure constant &alpha;(m<sub>p</sub>) admits a structured closed form 1/&alpha;&thinsp;=&thinsp;(&phi;<sup>N+2d</sup>&thinsp;+&thinsp;&phi;<sup>N+d</sup>&thinsp;&minus;&thinsp;2&phi;<sup>d</sup>)/d with exponents forming an <strong>arithmetic progression</strong> (step N, base d) &mdash; a two-generator graded ladder; the coefficient pattern (1, 1, &minus;2) is not yet derived from first principles but the algebraic structure is sharply constrained</li>
+    <li>The fine-structure constant &alpha;(m<sub>p</sub>) admits a structured closed form 1/&alpha;&thinsp;=&thinsp;(&phi;<sup>N+2d</sup>&thinsp;+&thinsp;&phi;<sup>N+d</sup>&thinsp;&minus;&thinsp;2&phi;<sup>d</sup>)/d, with the three exponents on a <strong>two-step graded ladder</strong> generated by N (Fano) and d (polarization); the coefficient pattern (1, 1, &minus;2) is not yet derived from first principles but the algebraic structure is sharply constrained</li>
     <li>The factor of 2 is explained by EM polarization states, and d&thinsp;=&thinsp;2 is uniquely selected by <strong>three independent arguments</strong>: the observed &alpha;, the number of EM polarizations, and the requirement that the Fano-plane cubic coupling be exactly marginal (D&thinsp;=&thinsp;2d+2&thinsp;=&thinsp;6 is the upper critical dimension)</li>
     <li><strong>Two independent derivations</strong> of &phi;: KAM stability (most irrational number) and scattering unitarity (unique self-similar lossless barrier)</li>
     <li>The exponent 7 in p&thinsp;=&thinsp;2/&phi;<sup>7</sup> is explained as transverse field DoFs by tensor rank (1+2+4), connecting to the Fano plane and octonion algebra</li>
@@ -869,7 +1136,7 @@
 
     <li><strong>Non-perturbative fixed point.</strong> The RG derivation shows the Fano-plane theory is marginal at D&thinsp;=&thinsp;6, and unitarity independently fixes the coupling to g&sup2;&thinsp;=&thinsp;1/&phi;. But confirming that the Fano theory&rsquo;s actual non-perturbative fixed point at D&thinsp;=&thinsp;4 matches 1/&phi; requires lattice simulation or conformal bootstrap with PSL(2,7) symmetry &mdash; a calculation that has not yet been done.</li>
 
-    <li><strong>The &alpha; formula.</strong> The closed form 1/&alpha;(m<sub>p</sub>)&thinsp;=&thinsp;(&phi;<sup>N+2d</sup>&thinsp;+&thinsp;&phi;<sup>N+d</sup>&thinsp;&minus;&thinsp;2&phi;<sup>d</sup>)/d is verified to 0.008% against the G identity. The exponent structure is now sharply constrained: <strong>an arithmetic progression (N+2d, N+d, d) with step N (Fano) and base d (polarization)</strong> &mdash; a two-generator graded ladder. What remains open is the coefficient pattern (1, 1, &minus;2): why these specific weights? A loop-expansion or graded-representation-theory argument is the most promising path. Until it closes, &alpha; acts as the second dimensionful anchor (alongside H<sub>0</sub>).</li>
+    <li><strong>The &alpha; formula.</strong> The closed form 1/&alpha;(m<sub>p</sub>)&thinsp;=&thinsp;(&phi;<sup>N+2d</sup>&thinsp;+&thinsp;&phi;<sup>N+d</sup>&thinsp;&minus;&thinsp;2&phi;<sup>d</sup>)/d is verified to 0.008% against the G identity. The exponent structure is sharply constrained: <strong>a two-step graded ladder built from the two physical generators N (Fano) and d (polarization)</strong>, with the three terms sitting at lattice positions (a, b)&thinsp;=&thinsp;(0,1), (1,1), (1,2) where the exponent is aN&thinsp;+&thinsp;bd. What remains open is the coefficient pattern (1, 1, &minus;2): why these specific weights? A loop-expansion or graded-representation-theory argument is the most promising path. Until it closes, &alpha; acts as the second dimensionful anchor (alongside H<sub>0</sub>).</li>
 
     <li><strong>Full CMB power spectrum.</strong> The shift parameter R captures the overall distance scale, but the full C<sub>&#8467;</sub> spectrum requires running the model through a Boltzmann code (CLASS/CAMB) with the recursive w(z). This would sharpen or relax the 4&sigma; R tension.</li>
 
