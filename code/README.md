@@ -44,6 +44,10 @@ Versions used: camb 2.0.3, cobaya 3.6.2, ACT-DR6-CMBonly 1.0.0, Python 3.12, Win
 | `coupled.py`, `fscan.py` | Partial DE→DM energy-transfer variant; scan of the transfer fraction f. |
 | `junction.py` | Junction-window variants (drain frozen or delayed above z_j). |
 | `boltzmann.py`, `verify_de.py`, `run5.py` | First CAMB runs: R, θ*, σ₈, low-ℓ cutoff signature; DE-table validation. |
+| `inflow_bg.py ref|scan <family>|point ...` | Inflow branch (Sept 2026): drain + parent-arrival source in the DE continuity equation, dρ/dt = −Γρ + S(t); three S(t) families (tophat = constant then off at z_end; expdec = fading with e-fold t_acc; gauss = single episode). Background scan with a θ*/ω_m CMB proxy + BAO + SN. |
+| `inflowfit.py <planck|joint> <fixed|free|freeA> <family> [params]` | Full-likelihood tier for the inflow branch (same Planck native likelihoods [+ BAO + SN]), Ω_m and n_s locked, arrival parameters fixed or profiled. |
+| `cplfull.py <planck|joint>` | Benchmark: ΛCDM + CPL (w0, wa) with all standard parameters free, same likelihoods. |
+| `inflow_mockcpl.py`, `inflow_post.py`, `inflow_probes.py` | What a CPL analysis would infer from an inflow universe; growth/S₈, w_eff(z), birth reservoir and CPL projection at the best fits; ISW ratio and fσ₈ for the inflow histories vs committed vs ΛCDM. |
 
 ### mock_and_probes/
 | script | computes |
@@ -91,6 +95,12 @@ conformal towers (`chain_lorentz.py`), and the exact horizon entropy count (`gol
 | G relation | 6.6743 ± 0.00015 ×10⁻¹¹ | 6.687 ×10⁻¹¹ | 0.2% high = 87σ as exact claim; = 0.012% in α(m_p) |
 | Kerr remnant spin coincidences | — | Q = 2φ at a = 0.6856 (0.11% from 0.6865); Mω = φ³/8 at 0.693 | near, not exact; no exact coincidence claimed |
 | GWTC-5.0 damping-time residual | GR = 0 | forecast +2 to +8% | measured joint +7 (+6/−5)%: inside band |
+| **Inflow branch** (locked + arrival term), Planck alone | 1003.0 | 1001.5 (tophat: z_end 0.54, F 0.89, w_min −1.35) | closes the squeeze; ΛCDM + free w0wa gives 1001.8 |
+| Inflow branch, Planck + BAO + SN | 1022.8 | 1014.2 tophat (z_end 0.61 ± 0.11, F 0.84, fM 0.056) / 1014.4 fading (t_acc 3.7 Gyr) / 1012.2 episode | −8.7 vs ΛCDM at equal parameter count; ΛCDM + free w0wa 1014.0 (w0 −0.83, wa −0.63, Ω_m 0.3124, n_s 0.9662) |
+| z_end profile (joint, tophat, A free) | — | 0.30: 1019.9; 0.45: 1016.4; 0.61: 1014.2; 0.75: 1015.7; 0.90: 1023.5; 1.20: 1032.7 | switch-off 7.9 ± 0.8 Gyr after birth (3.0 ± 0.3 recursion levels — not evidence) |
+| Inflow branch: what CPL would infer | — | (−0.74, −0.95) tophat; (−0.87, −0.43) fading; crossing z ≈ 0.4 | DESI DR2 range; degeneracy, not confirmation (fitted to the same data) |
+| Inflow branch: S₈ / fσ₈ / ISW at own best fit | 0.832 / — / 1 | S₈ 0.823–0.832; fσ₈(0.4) −2%; ISW ratio 0.97 (z=1), 0.78 (z=1.5) | growth distinctives lost; ISW prediction inverts above z ≈ 1 |
+| Inflow branch: birth reservoir | — | 11–23% of today's ρ_DE (committed law: 145%) | Ω_DE = (1−p)^n₀ no longer derived — the branch's main cost |
 
 Retractions kept visible on the site: sustained-accretion lockstep (Aug 2026); r_d ≈ 145 Mpc reading (retracted within a day);
 G₂ as Lagrangian symmetry (Sept 2026); octonion non-associativity as the source of irreversibility (Sept 2026).
