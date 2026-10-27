@@ -50,6 +50,9 @@ Versions used: camb 2.0.3, cobaya 3.6.2, ACT-DR6-CMBonly 1.0.0, Python 3.12, Win
 | `inflow_mockcpl.py`, `inflow_post.py`, `inflow_probes.py` | What a CPL analysis would infer from an inflow universe; growth/S₈, w_eff(z), birth reservoir and CPL projection at the best fits; ISW ratio and fσ₈ for the inflow histories vs committed vs ΛCDM. |
 | `nufit.py lcdm|model <mnu_eV>` | Neutrino-mass profile (Oct 2026): Planck native + DESI DR2 BAO + SN shape, maximized at fixed Σmν for ΛCDM and the locked model (Ω_m lock includes the neutrino density). |
 | `actnu.py lcdm|model <mnu_eV>` | Same profile with ACT DR6 CMB-only + low-ℓ EE in Planck's place (control without Planck's A_L anomaly). |
+| `sptfit.py <spt|joint> <lcdm|model>` | SPT-3G D1 SPTlite (candl) cross-check of the squeeze, alone (candl default τ and Tcal priors) or with BAO + SN. Requires `pip install candl-like` and the `spt_candl_data` repository. |
+| `laplace.py lcdm|model`, `laplace_lib.py` | Laplace-approximation evidence on the joint Planck + BAO + SN block: finite-difference Hessian at the best fit, Newton-refined minimum, flat-prior Occam term. |
+| `mcmc_joint.py lcdm|model [nsteps]` | emcee posterior sampling on the same joint likelihood (HDF5 backend). |
 | `isw_quaia.py` | ISW–galaxy cross amplitude relative to ΛCDM at the Quaia tomographic bins (z̄ = 0.97, 2.10) for the committed law and the inflow branch; two bias conventions. |
 
 ### mock_and_probes/
@@ -106,6 +109,9 @@ conformal towers (`chain_lorentz.py`), and the exact horizon entropy count (`gol
 | Inflow branch: birth reservoir | — | 11–23% of today's ρ_DE (committed law: 145%) | Ω_DE = (1−p)^n₀ no longer derived — the branch's main cost |
 | **Neutrino-mass profile**, Planck + BAO + SN, Δχ² relative to Σmν = 0 | 0.06 eV: +3.5; 0.12: +8.7; 0.20: +17.2 (1019.3 at 0) | 0.06 eV: +14.2; 0.12: +32.7; 0.20: +60.3 (1040.6 at 0) | **the "neutrino repair" claim fails**: the locked model prefers Σmν → 0 ~4× more steeply than ΛCDM; penalty entirely in the CMB block (BAO flat) |
 | Neutrino-mass profile, ACT + lowEE + BAO + SN (A_L-independent) | 0.06 eV: +3.8 (568.0 at 0) | 0.06 eV: +7.1 (577.8 at 0) | pull ~2× ΛCDM's without Planck's lensing anomaly; claim retracted on the site (Oct 2026) |
+| **SPT-3G D1 (SPTlite) + candl priors**, −2lnL | 157.2 (H₀ 66.5, Ω_m 0.327, n_s 0.947) | 165.3 (H₀ 66.2) | model +8.1 |
+| SPT-3G D1 + DESI DR2 BAO + SN, joint | 175.1 (H₀ 68.3, Ω_m 0.301) | 180.2 (H₀ 66.2) | **model +5.1** — vs +32 (Planck) and +13 (ACT): the verdict is Planck-driven |
+| Laplace evidence, Planck + BAO + SN (flat priors over fit bounds) | occam −24.7 nats; χ²_min 1022.80 | occam −19.6 nats; χ²_min 1054.64 | ln B = −10.8 (2 ln B = −21.5) against the model after a 5.2-nat Occam credit |
 | ISW–galaxy amplitude at the Quaia bins (z̄ 0.97 / 2.10) | 1 / 1 | 1.21 / 1.33 (inflow branch 0.97 / 0.62) | measured 1.19 ± 0.56 / 2.86 ± 1.62: χ² 0.9 (model) vs 1.4 (ΛCDM) vs 2.1 (inflow); consistent, direction right, not decisive |
 
 Retractions kept visible on the site: sustained-accretion lockstep (Aug 2026); r_d ≈ 145 Mpc reading (retracted within a day);
