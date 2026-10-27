@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://www.timesnotreal.com/</loc>
-    <lastmod>2026-04-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-  </url>
+  <url><loc>https://www.timesnotreal.com/</loc><lastmod>2026-10-27</lastmod></url>
+  <url><loc>https://www.timesnotreal.com/changelog.html</loc><lastmod>2026-10-27</lastmod></url>
+  <url><loc>https://www.timesnotreal.com/notes/dark-energy.html</loc><lastmod>2026-10-27</lastmod></url>
+  <url><loc>https://www.timesnotreal.com/notes/squeeze.html</loc><lastmod>2026-10-27</lastmod></url>
+  <url><loc>https://www.timesnotreal.com/notes/growth.html</loc><lastmod>2026-10-27</lastmod></url>
+  <url><loc>https://www.timesnotreal.com/notes/parent.html</loc><lastmod>2026-10-27</lastmod></url>
+  <url><loc>https://www.timesnotreal.com/notes/ringdown.html</loc><lastmod>2026-10-27</lastmod></url>
+  <url><loc>https://www.timesnotreal.com/notes/horizon-code.html</loc><lastmod>2026-10-27</lastmod></url>
+  <url><loc>https://www.timesnotreal.com/notes/constants.html</loc><lastmod>2026-10-27</lastmod></url>
+  <url><loc>https://www.timesnotreal.com/notes/archive.html</loc><lastmod>2026-10-27</lastmod></url>
 </urlset>
