@@ -48,6 +48,9 @@ Versions used: camb 2.0.3, cobaya 3.6.2, ACT-DR6-CMBonly 1.0.0, Python 3.12, Win
 | `inflowfit.py <planck|joint> <fixed|free|freeA> <family> [params]` | Full-likelihood tier for the inflow branch (same Planck native likelihoods [+ BAO + SN]), Ω_m and n_s locked, arrival parameters fixed or profiled. |
 | `cplfull.py <planck|joint>` | Benchmark: ΛCDM + CPL (w0, wa) with all standard parameters free, same likelihoods. |
 | `inflow_mockcpl.py`, `inflow_post.py`, `inflow_probes.py` | What a CPL analysis would infer from an inflow universe; growth/S₈, w_eff(z), birth reservoir and CPL projection at the best fits; ISW ratio and fσ₈ for the inflow histories vs committed vs ΛCDM. |
+| `nufit.py lcdm|model <mnu_eV>` | Neutrino-mass profile (Oct 2026): Planck native + DESI DR2 BAO + SN shape, maximized at fixed Σmν for ΛCDM and the locked model (Ω_m lock includes the neutrino density). |
+| `actnu.py lcdm|model <mnu_eV>` | Same profile with ACT DR6 CMB-only + low-ℓ EE in Planck's place (control without Planck's A_L anomaly). |
+| `isw_quaia.py` | ISW–galaxy cross amplitude relative to ΛCDM at the Quaia tomographic bins (z̄ = 0.97, 2.10) for the committed law and the inflow branch; two bias conventions. |
 
 ### mock_and_probes/
 | script | computes |
@@ -70,7 +73,7 @@ Davies point (`davies_point.py`), Foit–Kleban line spacing (`foitkleban.py`).
 Golden-chain (Fibonacci anyon) diagonalization, central charges, ground-state energy density, momentum-resolved
 conformal towers (`chain_lorentz.py`), and the exact horizon entropy count (`goldenentropy.py`).
 
-## Results table (September 2026) — including failures
+## Results table (October 2026) — including failures
 
 | test | ΛCDM | locked model | verdict |
 |---|---|---|---|
@@ -101,9 +104,12 @@ conformal towers (`chain_lorentz.py`), and the exact horizon entropy count (`gol
 | Inflow branch: what CPL would infer | — | (−0.74, −0.95) tophat; (−0.87, −0.43) fading; crossing z ≈ 0.4 | DESI DR2 range; degeneracy, not confirmation (fitted to the same data) |
 | Inflow branch: S₈ / fσ₈ / ISW at own best fit | 0.832 / — / 1 | S₈ 0.823–0.832; fσ₈(0.4) −2%; ISW ratio 0.97 (z=1), 0.78 (z=1.5) | growth distinctives lost; ISW prediction inverts above z ≈ 1 |
 | Inflow branch: birth reservoir | — | 11–23% of today's ρ_DE (committed law: 145%) | Ω_DE = (1−p)^n₀ no longer derived — the branch's main cost |
+| **Neutrino-mass profile**, Planck + BAO + SN, Δχ² relative to Σmν = 0 | 0.06 eV: +3.5; 0.12: +8.7; 0.20: +17.2 (1019.3 at 0) | 0.06 eV: +14.2; 0.12: +32.7; 0.20: +60.3 (1040.6 at 0) | **the "neutrino repair" claim fails**: the locked model prefers Σmν → 0 ~4× more steeply than ΛCDM; penalty entirely in the CMB block (BAO flat) |
+| Neutrino-mass profile, ACT + lowEE + BAO + SN (A_L-independent) | 0.06 eV: +3.8 (568.0 at 0) | 0.06 eV: +7.1 (577.8 at 0) | pull ~2× ΛCDM's without Planck's lensing anomaly; claim retracted on the site (Oct 2026) |
+| ISW–galaxy amplitude at the Quaia bins (z̄ 0.97 / 2.10) | 1 / 1 | 1.21 / 1.33 (inflow branch 0.97 / 0.62) | measured 1.19 ± 0.56 / 2.86 ± 1.62: χ² 0.9 (model) vs 1.4 (ΛCDM) vs 2.1 (inflow); consistent, direction right, not decisive |
 
 Retractions kept visible on the site: sustained-accretion lockstep (Aug 2026); r_d ≈ 145 Mpc reading (retracted within a day);
-G₂ as Lagrangian symmetry (Sept 2026); octonion non-associativity as the source of irreversibility (Sept 2026).
+G₂ as Lagrangian symmetry (Sept 2026); octonion non-associativity as the source of irreversibility (Sept 2026); the "neutrino-mass repair" (Oct 2026 — failed its own full-likelihood test; see the profile rows above).
 
 ## Known limitations of these analyses
 
